@@ -1,4 +1,10 @@
 :root {
+    /* --background: #eaeaea;
+    --accent: #BD2D3A;
+    --background2: #fafafa;
+    --header: #232323;
+    --text: #525252; */
+
     --background: #111111;
     --accent: #BD2D3A;
     --background2: #1f1f1f;
@@ -21,8 +27,21 @@ body {
     font-family: 'Signika Negative', Arial, Helvetica, sans-serif;
     color: var(--text)
 }
-h1 {
+h1,h2 {
     color: var(--header)
+}
+hr {
+    margin: .5rem 0rem .5rem 0rem;
+    border-color: var(--background);
+    border-width: .25rem;
+    border-style: solid;
+    border-radius: .5rem;
+}
+ul {
+    padding-left: 1.5rem;
+}
+li {
+    padding-top: 1rem;
 }
 
 #main {
@@ -44,12 +63,13 @@ h1 {
 
 .section {
     border-radius: .75rem;
+    padding: 1rem;
+    min-height: 90vh;
+    width: 100%;
+
 }
 
 #section-1 {
-    height: 90vh;
-    width: 100%;
-    padding: 1rem;
     background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('./Assets/weights.jpg');
     background-size: cover;
 
@@ -63,9 +83,6 @@ h1 {
 }
 
 #section-2 {
-    height: 90vh;
-    width: 100%;
-    padding: 1rem;
     margin-top: 1rem;
     background-color: var(--background2);
 
@@ -79,8 +96,8 @@ h1 {
         border-radius: .5rem;
 
         #section-2-img {
-            height:auto;
             width:100%;
+            max-height: 90vh;
         }
     }
     .section-right {
@@ -92,7 +109,56 @@ h1 {
 
 }
 
+#section-3 {
+    margin-top: 1rem;
+    background-color: var(--background);
+    padding: 0rem;
+    min-height: 90vh;
+    height: 90vh;
+    width: 100%;
+
+    h1 {
+        margin-bottom: 1rem;
+    }
+
+    #pricing-info {
+        width:100%;
+        text-align: center;
+    }
+
+    #packages {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+        height: fit-content;
+    }
+    .package {
+        float:left;
+        width: 13.6rem;
+        min-width: 100px;
+        height: fit-content;
+        margin-right: 1rem;
+        padding:.5rem;
+        background-color: var(--background2);
+        border-radius:.75rem ;
+
+        h2, .package-type-tag {
+            text-align: center;
+        }
+        .package-type-tag {
+            font-size: 1rem;
+        }
+    }
+    .last {
+        margin-right: 0px;
+    }
+}
+
 @media (max-width: 768px) {
+    .section {
+        min-height: 480px;
+    }
     #section-2 {
         flex-direction: column; /* Stack the boxes vertically */
         .section-left {
@@ -103,5 +169,8 @@ h1 {
             margin-left: 0rem;
             margin-top:1rem;
         }
+    }
+    .package {
+        width: 100%;
     }
 }
