@@ -1,7 +1,107 @@
 :root {
-    --background: #181818;
+    --background: #111111;
+    --accent: #BD2D3A;
+    --background2: #1f1f1f;
+    --header: #e5e5e5;
+    --text: #878787;
+}
+
+* {
+    margin: 0px;
+    box-sizing: border-box;
+}
+@font-face {
+	font-family: 'Signika Negative';
+	src: url(Signika_Negative/SignikaNegative-VariableFont_wght.ttf);
 }
 
 body {
     background-color: var(--background);
+    font-size: 1.1rem;
+    font-family: 'Signika Negative', Arial, Helvetica, sans-serif;
+    color: var(--text)
+}
+h1 {
+    color: var(--header)
+}
+
+#main {
+    width: 100%;
+    height: fit-content;
+    padding: 1rem;
+
+    scrollbar-gutter: stable;
+}
+
+#navbar {
+    transition: background-color 0.3s ease;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+#navbar.navbar-fixed {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.section {
+    border-radius: .75rem;
+}
+
+#section-1 {
+    height: 90vh;
+    width: 100%;
+    padding: 1rem;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('./Assets/weights.jpg');
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    #section-1-logo {
+        width: 60%;
+    }
+}
+
+#section-2 {
+    height: 90vh;
+    width: 100%;
+    padding: 1rem;
+    margin-top: 1rem;
+    background-color: var(--background2);
+
+    display: flex;
+    
+    .section-left {
+        float: left;
+        height:100%;
+        width:50%;
+        overflow: hidden;
+        border-radius: .5rem;
+
+        #section-2-img {
+            height:auto;
+            width:100%;
+        }
+    }
+    .section-right {
+        float: left;
+        height:100%;
+        width:50%;
+        margin-left:1rem;
+    }
+
+}
+
+@media (max-width: 768px) {
+    #section-2 {
+        flex-direction: column; /* Stack the boxes vertically */
+        .section-left {
+            width:100%;
+        }
+        .section-right {
+            width:100%;
+            margin-left: 0rem;
+            margin-top:1rem;
+        }
+    }
 }
