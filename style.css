@@ -9,27 +9,36 @@
     --accent: #BD2D3A;
     --background2: #1f1f1f;
     --header: #e5e5e5;
-    --text: #878787;
+    --text: #a9a9a9;
 }
 
 * {
     margin: 0px;
     box-sizing: border-box;
+    font-family: 'Signika Negative', Arial, Helvetica, sans-serif;
 }
+
 @font-face {
-	font-family: 'Signika Negative';
-	src: url(Signika_Negative/SignikaNegative-VariableFont_wght.ttf);
+    font-family: 'Signika Negative';
+    src: url(Signika_Negative/SignikaNegative-VariableFont_wght.ttf);
 }
 
 body {
     background-color: var(--background);
     font-size: 1.1rem;
-    font-family: 'Signika Negative', Arial, Helvetica, sans-serif;
     color: var(--text)
 }
-h1,h2 {
+
+input {
+    font-size: 1.1rem;
+    color: var(--background)
+}
+
+h1,
+h2 {
     color: var(--header)
 }
+
 hr {
     margin: .5rem 0rem .5rem 0rem;
     border-color: var(--background);
@@ -37,9 +46,11 @@ hr {
     border-style: solid;
     border-radius: .5rem;
 }
+
 ul {
     padding-left: 1.5rem;
 }
+
 li {
     padding-top: 1rem;
 }
@@ -66,11 +77,10 @@ li {
     padding: 1rem;
     min-height: 90vh;
     width: 100%;
-
 }
 
 #section-1 {
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('./Assets/weights.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./Assets/weights.jpg');
     background-size: cover;
 
     display: flex;
@@ -85,26 +95,26 @@ li {
 #section-2 {
     margin-top: 1rem;
     background-color: var(--background2);
+    height: 90vh;
 
     display: flex;
-    
+
     .section-left {
         float: left;
-        height:100%;
-        width:50%;
+        width: 50%;
         overflow: hidden;
         border-radius: .5rem;
 
         #section-2-img {
-            width:100%;
-            max-height: 90vh;
+            width: 100%;
         }
     }
+
     .section-right {
         float: left;
-        height:100%;
-        width:50%;
-        margin-left:1rem;
+        height: 100%;
+        width: 50%;
+        margin-left: 1rem;
     }
 
 }
@@ -122,54 +132,99 @@ li {
     }
 
     #pricing-info {
-        width:100%;
+        width: 100%;
         text-align: center;
     }
 
     #packages {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
+        justify-items: center;
         width: 100%;
         height: fit-content;
+
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+        gap: 1rem;
     }
+
     .package {
-        float:left;
-        width: 13.6rem;
+        width: 100%;
         min-width: 100px;
         height: fit-content;
-        margin-right: 1rem;
-        padding:.5rem;
+        padding: 1rem;
         background-color: var(--background2);
-        border-radius:.75rem ;
+        border-radius: .75rem;
 
-        h2, .package-type-tag {
+        h2,
+        .package-type-tag {
             text-align: center;
         }
+
         .package-type-tag {
             font-size: 1rem;
         }
+
+        .package-price-wrapper {
+            padding-top: 1rem;
+        }
+
+        .package-price {
+            color: var(--accent);
+            font-size: 2.2rem;
+            font-weight: 800;
+        }
+
+        .package-price-time {
+            font-size: .75rem;
+        }
     }
+
     .last {
         margin-right: 0px;
     }
+}
+
+#section-4 {
+    padding-top: 1rem;
+    text-align: center;
+    #signup-cta {
+        width: 10rem;
+    }
+}
+
+
+.cta {
+    background-color: var(--accent);
+    border-radius: .5rem;
+    border-style: none;
+    font-size: 1.;
+    padding: .5rem;
+
+    transition: filter 0.10s ease;
+}
+.cta:hover {
+    filter: brightness(70%);
 }
 
 @media (max-width: 768px) {
     .section {
         min-height: 480px;
     }
+
     #section-2 {
-        flex-direction: column; /* Stack the boxes vertically */
+        flex-direction: column;
+
+        /* Stack the boxes vertically */
         .section-left {
-            width:100%;
+            width: 100%;
         }
+
         .section-right {
-            width:100%;
+            width: 100%;
             margin-left: 0rem;
-            margin-top:1rem;
+            margin-top: 1rem;
         }
     }
+
     .package {
         width: 100%;
     }
