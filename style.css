@@ -15,13 +15,14 @@
 * {
     margin: 0px;
     box-sizing: border-box;
-    font-family: 'Signika Negative', Arial, Helvetica, sans-serif;
+    font-family: 'Chivo', Arial, Helvetica, sans-serif;
 }
 
 @font-face {
-    font-family: 'Signika Negative';
-    src: url(Signika_Negative/SignikaNegative-VariableFont_wght.ttf);
+    font-family: 'Chivo';
+    src: url(Chivo/Chivo-VariableFont_wght.ttf);
 }
+
 
 body {
     background-color: var(--background);
@@ -124,7 +125,7 @@ li {
     background-color: var(--background);
     padding: 0rem;
     min-height: 90vh;
-    height: 90vh;
+    height: fit-content;
     width: 100%;
 
     h1 {
@@ -186,6 +187,7 @@ li {
 #section-4 {
     padding-top: 1rem;
     text-align: center;
+
     #signup-cta {
         width: 10rem;
     }
@@ -201,6 +203,7 @@ li {
 
     transition: filter 0.10s ease;
 }
+
 .cta:hover {
     filter: brightness(70%);
 }
