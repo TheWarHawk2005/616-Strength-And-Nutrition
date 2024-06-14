@@ -127,11 +127,12 @@ li {
         float: left;
         width: 50%;
         overflow: hidden;
-        border-radius: .5rem;
-
+        
         #section-2-img {
+            object-fit: cover;
             width: 100%;
             max-height: calc(90lvh - 2rem);
+            border-radius: .5rem;
         }
     }
 
