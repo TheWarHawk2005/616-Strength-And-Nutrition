@@ -272,6 +272,8 @@ li {
     img {
         float: left;
         width: 5rem;
+        height: 100%;
+        align-self: center;
     }
     #copyright {
         float: left;
