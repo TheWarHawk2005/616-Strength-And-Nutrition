@@ -14,6 +14,7 @@
     <meta name="google-site-verification" content="ze9eu-P8xvZh2qy_x6NmeykepsQFeDvTklvoafn1tLA" />
 </head>
 <script src="pricing.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
 <body>
     <div id="main">
@@ -27,17 +28,34 @@
             <div class="section-right">
                 <h1>About Us</h1>
                 <br>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, iusto tempore sunt delectus eligendi
-                    illum repellat consequuntur nam rerum quos a vero, eius, laboriosam labore. Facilis autem nostrum
-                    voluptatibus dicta.</p>
+                <p>We are a West Michigan-based, private garage gym, offering 1:1, small group, and online barbell
+                    coaching, as well as certified nutrition coaching services. Since 2021, our client-centered approach
+                    has
+                    served people of *all* ages and abilities. Whether you're looking to enhance performance in a
+                    sport/hobby, improve functional strength, or avoid the effects of aging (imbalance, frailty,
+                    weakness,
+                    injury), we are here to serve you. Come, get strong with us!</p>
                 <br>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, iusto tempore sunt delectus eligendi
-                    illum repellat consequuntur nam rerum quos a vero, eius, laboriosam labore. Facilis autem nostrum
-                    voluptatibus dicta.</p>
+                <h2>Meet Your Coaches</h2>
                 <br>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, iusto tempore sunt delectus eligendi
-                    illum repellat consequuntur nam rerum quos a vero, eius, laboriosam labore. Facilis autem nostrum
-                    voluptatibus dicta.</p>
+                <h3>Robert Harrison - Barbell Coach</h3>
+                <p>Working in long term care for more than 20 years, Robert has witnessed the predictable patterns of
+                    aging and frailty, as well as the injuries that are associated with aging. In 2015 he began his
+                    barbell
+                    journey, as a way to improve his functional strength in his secondary profession as a paid-on-call
+                    firefighter. On this journey he discovered Dr. Jonathan Sullivan's great work, "The Barbell
+                    Prescription," which inspired him to become a Barbell Logic-trained coach.</p>
+                <br>
+                <h3>Kristin Harrison - Assistant Barbell Coach, PN1-CNC</h3>
+                <p>Kristin is a Precision Nutrition certified nutrition coach, offering evidence-based nutritional
+                    guidance. Her model of coaching is uniquely compassionate, as she herself was a medical nutrition
+                    patient for nearly two years. Kristin is familiar with the unique metabolic challenges men & women
+                    face in
+                    all seasons of life, regardless of fitness level. She is trained to support clients with 1:1 or
+                    small
+                    group consultation, create individualized meal plans, provide weekly accountability, and assist with
+                    other aspects of deep health (change psychology, sleep/recovery, hormone health).</p>
+
             </div>
         </div>
         <div id="section-3" class="section">
@@ -148,6 +166,43 @@
             </div>
             <div id="section-4">
                 <input id="signup-cta" class="cta" type="button" value="Sign Up" onclick="redirectToSignup()">
+            </div>
+
+            <div id="section-5" class="section">
+                <h1>Contact Us</h1>
+
+                <div id="section-5-wrapper">
+                    <div class="section-left">
+                        <form id="contact-form">
+                            <!-- To simplify the tutorial, the value is static. -->
+                            <input type="hidden" name="contact_number" value="697483">
+
+                            <label for="user_name">Name</label>
+                            <input type="text" id="user_name" name="user_name">
+                            <label for="user_email">Email</label>
+                            <input type="email" id="user_email" name="user_email">
+                            <label for="message">Message</label>
+                            <textarea name="message" id="message"></textarea>
+
+
+                            <input class="cta" type="submit" value="Send">
+                        </form>
+                    </div>
+
+                    <div class="section-right">
+                        <p>Questions? Please reach out to us!</p>
+
+                        <div class="social">
+                            <img src="./Assets/Facebook_Logo_Secondary.png">
+                            <a href="https://www.facebook.com/616StrengthLab">Robert Harrison</a>
+                        </div>
+                        <div class="social">
+                            <img src="./Assets/Gmail_Logo_White_64px.png">
+                            <span>616strength@gmail.com</span>
+                        </div>
+                    </div>
+
+                </div>
             </div>
 
         </div>
