@@ -1,37 +1,232 @@
-elements = document.querySelectorAll('.package-price')
-console.log('Website programmed by Louis Harrison.')
-console.log('Thanks to email.js (emailjs.com), namecheap (namecheap.com) and GitHub (github.com).')
+<!DOCTYPE html>
+<html lang="en">
+<html>
 
-for (i=0;i<elements.length;i++) {
-    elements[i].innerHTML = pricing[i].toString()
-}
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>616 Strength & Nutrition</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./Assets/favicon.ico" type="image/x-icon">
 
-function redirectToSignup() {
-    //alert('616 Strength and Nutrition uses Turnkey to handle transactions and scheduling. Mind if we redirect you?')
-    window.open('https://app.turnkey.coach/coaching_tiers/74')
-}
+    <meta name="google-site-verification" content="ze9eu-P8xvZh2qy_x6NmeykepsQFeDvTklvoafn1tLA" />
+</head>
+<script src="pricing.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<body>
+    <div id="main">
+        <!-- SECTION 1 -->
+        <div id="section-1" class="section">
+            <img id="section-1-logo" src="./Assets/logo_text_white.png">
+        </div>
+
+        <!-- SECTION 2 -->
+        <div id="section-2" class="section">
+            <div class="section-left">
+                <img id="section-2-img" src="./Assets/belt.jpg">
+            </div>
+            <div class="section-right">
+                <h1>About Us</h1>
+                <br>
+                <p>We are a West Michigan-based, private garage gym, offering 1:1, small group, and online barbell
+                    coaching, as well as certified nutrition coaching services. Since 2021, our client-centered approach
+                    has
+                    served people of *all* ages and abilities. Whether you're looking to enhance performance in a
+                    sport/hobby, improve functional strength, or avoid the effects of aging (imbalance, frailty,
+                    weakness,
+                    injury), we are here to serve you. Come, get strong with us!</p>
+                <br>
+                <h2>Meet Your Coaches</h2>
+                <br>
+                <h3>Robert Harrison - Barbell Coach</h3>
+                <p>Working in long term care for more than 20 years, Robert has witnessed the predictable patterns of
+                    aging and frailty, as well as the injuries that are associated with aging. In 2015 he began his
+                    barbell
+                    journey, as a way to improve his functional strength in his secondary profession as a paid-on-call
+                    firefighter. On this journey he discovered Dr. Jonathan Sullivan's great work, "The Barbell
+                    Prescription," which inspired him to become a Barbell Logic-trained coach.</p>
+                <br>
+                <h3>Kristin Harrison - Assistant Barbell Coach, PN1-CNC</h3>
+                <p>Kristin is a Precision Nutrition certified nutrition coach, offering evidence-based nutritional
+                    guidance. Her model of coaching is uniquely compassionate, as she herself was a medical nutrition
+                    patient for nearly two years. Kristin is familiar with the unique metabolic challenges men & women
+                    face in
+                    all seasons of life, regardless of fitness level. She is trained to support clients with 1:1 or
+                    small
+                    group consultation, create individualized meal plans, provide weekly accountability, and assist with
+                    other aspects of deep health (change psychology, sleep/recovery, hormone health).</p>
+
+            </div>
+        </div>
+
+        <!-- SECTION 3 -->
+        <div id="section-3" class="section">
+            <div id="pricing-info">
+                <h1>Coaching Packages</h1>
+            </div>
+            <div id="packages">
+                <div id="strength-online" class="package">
+                    <h2>Strength</h2>
+                    <div class="package-type-tag"><span>ONLINE</span></div>
+                    <hr>
+                    <div class="package-details">
+                        <ul>
+                            <li>Online Strength Coaching</li>
+                            <li>Individualized programming</li>
+                            <li>Delivered via TKC app</li>
+                        </ul>
+                    </div>
+                    <div class="package-price-wrapper">
+                        <span class="package-price"></span>
+                        <span class="package-price-time">/month</span>
+                    </div>
+                </div>
+                <div class="package">
+                    <h2>Strength</h2>
+                    <div class="package-type-tag"><span>IN PERSON</span></div>
+                    <hr>
+                    <div class="package-details">
+                        <ul>
+                            <li>(2) one-hour strength training sessions per week</li>
+                            <li>Individualized programming</li>
+                            <li>Small cohort setting</li>
+                            <li>Full access to TKC app</li>
+                        </ul>
+                    </div>
+                    <div class="package-price-wrapper">
+                        <span class="package-price"></span>
+                        <span class="package-price-time">/month</span>
+                    </div>
+                </div>
+                <div class="package">
+                    <h2>Nutrition</h2>
+                    <div class="package-type-tag"><span>ONLINE</span></div>
+                    <hr>
+                    <div class="package-details">
+                        <ul>
+                            <li>Online nutrition coaching by our PN1 certified coach</li>
+                            <li>Delivered via TKC app</li>
+                        </ul>
+                    </div>
+                    <div class="package-price-wrapper">
+                        <span class="package-price"></span>
+                        <span class="package-price-time">/month</span>
+                    </div>
+                </div>
+                <div class="package">
+                    <h2>Strength & Nutrition</h2>
+                    <div class="package-type-tag"><span>ONLINE</span></div>
+                    <hr>
+                    <div class="package-details">
+                        <ul>
+                            <li>Online Strength Coaching</li>
+                            <li>Individualized programming</li>
+                            <li>Online nutrition coaching by our PN1 certified coach</li>
+                            <li>Delivered via TKC app</li>
+                        </ul>
+                    </div>
+                    <div class="package-price-wrapper">
+                        <span class="package-price"></span>
+                        <span class="package-price-time">/month</span>
+                    </div>
+                </div>
+                <div class="package">
+                    <h2>Strength & Nutrition</h2>
+                    <div class="package-type-tag"><span>IN PERSON + ONLINE</span></div>
+                    <hr>
+                    <div class="package-details">
+                        <ul>
+                            <li>(2) one-hour strength training sessions per week</li>
+                            <li>Individualized programming</li>
+                            <li>Small cohort setting</li>
+                            <li>Online nutrition coaching by our PN1 certified coach</li>
+                            <li>Full access to TKC app</li>
+                        </ul>
+                    </div>
+                    <div class="package-price-wrapper">
+                        <span class="package-price"></span>
+                        <span class="package-price-time">/month</span>
+                    </div>
+                </div>
+                <div class="package last">
+                    <h2>CAMPS & CONSULTS</h2>
+                    <hr>
+                    <div class="package-details">
+                        <p>Various options including:</p>
+                        <ul>
+                            <li>90 minute introduction to barbell training</li>
+                            <br>
+                            <span><b>OR</b></span>
+                            <li>90 minute consulting session</li>
+                        </ul>
+                    </div>
+                    <div class="package-price-wrapper">
+                        <span class="package-price"></span>
+                        <span class="package-price-time"> one time charge</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SECTION 4 -->
+        <div id="section-4">
+            <input id="signup-cta" class="cta" type="button" value="Sign Up" onclick="redirectToSignup()">
+        </div>
+
+        <!-- SECTION 5 -->
+        <div id="section-5" class="section">
+            <h1>Contact Us</h1>
+
+            <div id="section-5-wrapper">
+                <div class="section-left">
+                    <form id="contact-form">
+                        <!-- To simplify the tutorial, the value is static. -->
+                        <input type="hidden" name="contact_number" value="697483">
+
+                        <label for="user_name">Name</label>
+                        <input type="text" id="user_name" name="user_name">
+                        <label for="user_email">Email</label>
+                        <input type="email" id="user_email" name="user_email">
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message"></textarea>
 
 
-// from emailjs documentation
-(function() {
-    // https://dashboard.emailjs.com/admin/account
-    emailjs.init({
-      publicKey: "Z0XokRkh5OmLpT_4K",
-    });
-})();
-window.onload = function() {
-    document.getElementById('contact-form').addEventListener('submit', function(event) {
-        event.preventDefault();
-        // these IDs from the previous steps
-        emailjs.sendForm('web_contact_service', 'web_contact_template', this)
-            .then(() => {
-                console.log('SUCCESS!');
-                alert('Message sent! 🏋️‍♂️')
-                location.reload()
-            }, (error) => {
-                console.log('FAILED...', error);
-            });
-            
-    });
-    
-}
+                        <input class="cta" type="submit" value="Send">
+                    </form>
+                </div>
+
+                <div class="section-right">
+                    <p>Questions? Please reach out to us!</p>
+
+                    <div class="social">
+                        <img src="./Assets/Facebook_Logo_Secondary.png">
+                        <a href="https://www.facebook.com/616StrengthLab">Robert Harrison</a>
+                    </div>
+                    <div class="social">
+                        <img src="./Assets/Instagram_Glyph_White.png">
+                        <a href="https://www.instagram.com/616_strength_nutrition/">616_strength_nutrition</a>
+                    </div>
+                    <div class="social">
+                        <img src="./Assets/Gmail_Logo_White_64px.png">
+                        <span>616strength@gmail.com</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div id="footer">
+        <img src="./Assets/logo.png">
+        <span id="copyright">© 2024 616 Strength Lab LLC. All Rights Reserved. Logo and all related branding (logo, word mark, stripes icon) are property of 616 Strength Lab LLC and shall not be used without explicit permission.</span>
+    </div>
+    </div>
+
+    <script src="index.js" async defer></script>
+</body>
+
+</html>
