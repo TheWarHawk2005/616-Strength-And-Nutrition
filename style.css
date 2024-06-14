@@ -131,6 +131,7 @@ li {
 
         #section-2-img {
             width: 100%;
+            max-height: calc(90lvh - 2rem);
         }
     }
 
