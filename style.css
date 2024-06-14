@@ -10,6 +10,7 @@
     --background2: #1f1f1f;
     --header: #e5e5e5;
     --text: #a9a9a9;
+    --input-focus: #818181;
 }
 
 * {
@@ -26,18 +27,37 @@
 
 body {
     background-color: var(--background);
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: var(--text)
 }
 
+#main {
+    height: 100%;
+}
+
 input {
-    font-size: 1.1rem;
-    color: var(--background)
+    font-size: 1rem;
+    color: var(--background);
+    background-color: var(--text);
+    border-radius: .5rem;
+    border-style: none;
+    outline: none;
+
+}
+input[type="text"],input[type="email"] {
+    padding: .5rem;
+}
+a {
+    color: var(--accent);
 }
 
 h1,
 h2 {
     color: var(--header)
+}
+
+h3 {
+    color: var(--accent)
 }
 
 hr {
@@ -75,12 +95,17 @@ li {
 
 .section {
     border-radius: .75rem;
+    margin-top: 5rem;
     padding: 1rem;
     min-height: 90vh;
     width: 100%;
+
+    /* for mobile: */
+    min-height: 90lvh; 
 }
 
 #section-1 {
+    margin-top: 0px;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./Assets/weights.jpg');
     background-size: cover;
 
@@ -93,12 +118,14 @@ li {
     }
 }
 
+
 #section-2 {
-    margin-top: 1rem;
     background-color: var(--background2);
+    display: flex;
     height: 90vh;
 
-    display: flex;
+    /* for mobile: */
+    height: 90lvh;
 
     .section-left {
         float: left;
@@ -121,12 +148,13 @@ li {
 }
 
 #section-3 {
-    margin-top: 1rem;
     background-color: var(--background);
     padding: 0rem;
-    min-height: 90vh;
     height: fit-content;
+    min-height: 90vh;
     width: 100%;
+
+    min-height: 90lvh;
 
     h1 {
         margin-bottom: 1rem;
@@ -193,6 +221,49 @@ li {
     }
 }
 
+#section-5 {
+    height: fit-content;
+
+    #section-5-wrapper {
+        display: flex;
+        width: 100%;
+        height:100%;
+        .section-left {
+            float: left;
+            width: 50%;
+            height: 100%;
+            border-radius: 1rem;
+            background-color: var(--background2);
+            padding: 1rem;
+
+            input,#message {
+                width: 100%;
+                margin-top: .5rem;
+                margin-bottom: 1rem;
+            }
+            input:focus,#message:focus{
+                background-color: var(--input-focus);
+            }
+
+            #message {
+                height: 10rem;
+                padding: 1rem;
+                background-color: var(--text);
+                color: var(--background);
+                border-radius: .5rem;
+                outline: none;
+            }
+        }
+
+        .section-right {
+            float: left;
+            height: 100%;
+            width: 50%;
+            margin-left: 1rem;
+            padding-top: 1rem;
+        }
+    }
+}
 
 .cta {
     background-color: var(--accent);
@@ -206,6 +277,15 @@ li {
 
 .cta:hover {
     filter: brightness(70%);
+}
+
+.social {
+    margin-top: 1rem;
+    img {
+        height: 1rem;
+        vertical-align: middle;
+        margin-right: .5rem;
+    }
 }
 
 @media (max-width: 768px) {
@@ -232,3 +312,4 @@ li {
         width: 100%;
     }
 }
+
