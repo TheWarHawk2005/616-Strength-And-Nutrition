@@ -97,17 +97,16 @@ li {
     border-radius: .75rem;
     margin-top: 5rem;
     padding: 1rem;
-    min-height: 90vh;
     width: 100%;
-
-    /* for mobile: */
-    min-height: 90lvh; 
 }
 
 #section-1 {
     margin-top: 0px;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./Assets/weights1.jpg');
     background-size: cover;
+
+    height: 90vh;
+    height: 90lvh;
 
     display: flex;
     justify-content: center;
@@ -122,10 +121,10 @@ li {
 #section-2 {
     background-color: var(--background2);
     display: flex;
-    min-height: 90vh;
+    height: 90vh;
 
     /* for mobile: */
-    min-height: 90lvh;
+    height: 90lvh;
 
     .section-left {
         float: left;
@@ -228,6 +227,7 @@ li {
         display: flex;
         width: 100%;
         height:100%;
+        
         .section-left {
             float: left;
             width: 50%;
@@ -265,6 +265,24 @@ li {
     }
 }
 
+#footer {
+    padding: 1rem;
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+
+    img {
+        float: left;
+        width: 5rem;
+    }
+    #copyright {
+        float: left;
+        font-size: .75rem;
+        align-self: center;
+        margin-left: 1rem;
+    }
+}
+
 .cta {
     background-color: var(--accent);
     border-radius: .5rem;
@@ -293,7 +311,7 @@ li {
         min-height: 480px;
     }
 
-    #section-2 {
+    #section-2,#section-5 #section-5-wrapper {
         flex-direction: column;
 
         /* Stack the boxes vertically */
@@ -307,9 +325,13 @@ li {
             margin-top: 1rem;
         }
     }
+    #section-5 {
+        padding: 0px;
+    }
 
     .package {
         width: 100%;
     }
+
 }
 
