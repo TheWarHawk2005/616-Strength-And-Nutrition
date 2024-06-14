@@ -100,7 +100,8 @@ li {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./Assets/weights1.jpg');
     background-size: cover;
 
-    height: 90lvh;
+    height: 90vh;
+    /* height: 90lvh; */
 
     display: flex;
     justify-content: center;
@@ -144,7 +145,6 @@ li {
     background-color: var(--background);
     padding: 0rem;
     height: fit-content;
-    min-height: 90vh;
     width: 100%;
 
     min-height: 90lvh;
