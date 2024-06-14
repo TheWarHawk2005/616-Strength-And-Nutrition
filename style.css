@@ -122,10 +122,10 @@ li {
 #section-2 {
     background-color: var(--background2);
     display: flex;
-    height: 90vh;
+    min-height: 90vh;
 
     /* for mobile: */
-    height: 90lvh;
+    min-height: 90lvh;
 
     .section-left {
         float: left;
