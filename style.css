@@ -106,7 +106,7 @@ li {
 
 #section-1 {
     margin-top: 0px;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./Assets/weights.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./Assets/weights1.jpg');
     background-size: cover;
 
     display: flex;
