@@ -31,10 +31,6 @@ body {
     color: var(--text)
 }
 
-#main {
-    height: 100%;
-}
-
 input {
     font-size: 1rem;
     color: var(--background);
@@ -78,7 +74,6 @@ li {
 
 #main {
     width: 100%;
-    height: fit-content;
     padding: 1rem;
 
     scrollbar-gutter: stable;
@@ -309,7 +304,7 @@ li {
 
 @media (max-width: 768px) {
     .section {
-        min-height: 480px;
+        /* min-height: 480px; */
     }
 
     #section-2,#section-5 #section-5-wrapper {
