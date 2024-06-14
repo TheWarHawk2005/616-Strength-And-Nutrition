@@ -105,7 +105,6 @@ li {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./Assets/weights1.jpg');
     background-size: cover;
 
-    height: 90vh;
     height: 90lvh;
 
     display: flex;
@@ -121,10 +120,8 @@ li {
 #section-2 {
     background-color: var(--background2);
     display: flex;
-    height: 90vh;
-
-    /* for mobile: */
-    height: 90lvh;
+    height: fit-content;
+    min-height: 90lvh;
 
     .section-left {
         float: left;
@@ -313,7 +310,6 @@ li {
 
     #section-2,#section-5 #section-5-wrapper {
         flex-direction: column;
-
         /* Stack the boxes vertically */
         .section-left {
             width: 100%;
