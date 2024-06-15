@@ -5,12 +5,19 @@
     --header: #232323;
     --text: #525252; */
 
-    --background: #111111;
+    /* --background: #111111;
     --accent: #BD2D3A;
     --background2: #1f1f1f;
     --header: #e5e5e5;
     --text: #a9a9a9;
-    --input-focus: #818181;
+    --input-focus: #818181; */
+
+    --background: #0c0c11;
+    --accent: #BD2D3A;
+    --background2: #18181e;
+    --header: #e5e5e5;
+    --text: #92929e;
+    --input-focus: #878294;
 }
 
 * {
