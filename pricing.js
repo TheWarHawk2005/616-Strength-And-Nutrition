@@ -2,10 +2,8 @@
 // of the packages.
 
 const pricing = [
-    135,    // strength ONLINE
-    210,    // strength IN PERSON
-    100,    // nutrition ONLINE
-    185,    // strength ONLINE + nutrition ONLINE
-    275,    // strength IN PERSON + nutrition ONLINE
-    75      // camps + consults
+    150,    // strength ONLINE
+    230,    // strength IN PERSON
+    300,    // strength IN PERSON + nutrition ONLINE
+    85      // camps + consults
 ]
