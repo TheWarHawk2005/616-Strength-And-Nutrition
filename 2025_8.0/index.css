@@ -1,0 +1,339 @@
+/* ------------------------------ HERO SECTION ------------------------------ */
+#hero {
+    height: calc(var(--default-section-height) - 5rem);
+    display: grid;
+    grid-template-areas: "hero_logo hero_text";
+    grid-template-columns: 1fr 1fr;
+    align-content: center;
+
+    padding: 5rem;
+
+    /* ===== Fixed background ===== */
+
+    /*background-color: var(--background-dark);
+    background-image: url('./assets/art/weights_darker.jpg');
+    background-size: cover;
+    background-repeat: no-repeat; */
+}
+
+#hero_logo {
+    height: 100%;
+    width: 100%;
+    grid-area: hero_logo;
+}
+
+#hero_logo_img {
+    height: auto;
+    width: 100%;
+}
+
+#hero_text {
+    height: 100%;
+    width: 100%;
+    grid-area: hero_text;
+    color: var(--text-light);
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-auto-flow: row;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+#header-cta-container {
+    width: fit-content;
+    margin: 0 auto;
+    padding: 1rem 2rem 0rem;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+
+    position: relative;
+    z-index: 2;
+    margin-bottom: -2px;
+    /* pull it down so it covers the section border */
+    background-color: var(--background);
+    border: 2px solid var(--surface);
+    border-radius: 2rem 2rem 0rem 0rem;
+    border-bottom: none;
+    /* so it blends */
+}
+
+.header-cta {
+    padding: .5rem 2rem;
+    border-radius: 3rem;
+    border: 2px solid;
+    font-size: 1.2rem;
+}
+
+.header-cta:hover {
+    cursor: pointer;
+    transition: background-color .2s linear;
+    transition: color .2s linear
+}
+
+#header-cta-strength {
+    color: var(--accent-primary);
+    background-color: transparent;
+    border-color: var(--accent-primary);
+}
+
+#header-cta-strength:hover {
+    color: var(--background);
+    background-color: var(--accent-primary);
+}
+
+#header-cta-nutrition {
+    color: var(--accent-secondary);
+    background-color: transparent;
+    border-color: var(--accent-secondary);
+}
+
+#header-cta-nutrition:hover {
+    color: var(--background);
+    background-color: var(--accent-secondary);
+}
+
+/* ----------------------- General Sellpoints Section ----------------------- */
+
+#general-sellpoints {
+    background-color: var(--background);
+    height: fit-content;
+
+    padding-top: 1rem;
+    border-top: 2px solid var(--surface)
+}
+
+#scroll-prompt {
+    text-align: center;
+    font-size: 1rem;
+    color: var(--text-transparent);
+}
+
+#header-features {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 6rem;
+    gap: 2rem;
+}
+
+.feature-container {
+    text-align: center;
+
+    p {
+        margin-top: 1rem;
+    }
+}
+
+#services {
+    height: fit-content;
+    padding-top: 6rem;
+    background-color: var(--background);
+
+}
+
+#services-header {
+    text-align: center;
+
+    p {
+        margin-top: .5rem;
+    }
+}
+
+#services-body {
+    margin-top: 2rem;
+    padding: 2rem;
+
+    background-color: var(--surface);
+    border-radius: 1rem;
+
+    h2 {
+        text-align: center;
+        margin-top: 6rem;
+    }
+
+    p {
+        margin-top: 1rem;
+    }
+
+    #walton-notice-services {
+        margin-top: 1rem;
+        font-weight: 500;
+    }
+}
+
+#services-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: var(--surface-border);
+
+    h2 {
+        margin-top: 0rem;
+    }
+
+}
+
+.service-card {
+    text-align: center;
+
+    p {
+        margin-top: 1rem;
+    }
+}
+
+
+
+#services-cta-container {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+#compare-packages-cta {
+    padding: .5rem 2rem;
+    border-radius: 3rem;
+    border: 2px solid;
+    font-size: 1.2rem;
+    color: var(--accent-primary);
+    background-color: transparent;
+    border-color: var(--accent-primary);
+}
+
+#compare-packages-cta:hover {
+    color: var(--background);
+    background-color: var(--accent-primary);
+    cursor: pointer;
+    transition: background-color .2s linear;
+    transition: color .2s linear
+}
+
+#contact {
+    height: fit-content;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    background-color: var(--background);
+    background-image: linear-gradient(to top, transparent, var(--background)), url(./assets/art/grit_blue_transparent.png);
+    background-size: cover;
+}
+
+#contact-header {
+    text-align: center;
+}
+
+#contact-options-container {
+    width: 100%;
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+}
+
+#contact-form {
+    width: 100%;
+    display: block;
+    background-color: var(--surface);
+    border-radius: 1rem;
+    padding: 2rem;
+}
+
+.contact-item {
+    width: 100%;
+    margin-bottom: 1rem;
+    display: block;
+
+    input {
+        width: 100%;
+        margin-top: .5rem;
+    }
+
+    textarea {
+        width: 100%;
+        height: 10rem;
+        margin-top: .5rem;
+
+    }
+}
+
+#send-contact-message-container {
+    text-align: center;
+
+}
+
+#send-contact-message {
+    padding: .5rem 2rem;
+    border-radius: 3rem;
+    border: 2px solid;
+    font-size: 1.2rem;
+
+    color: var(--accent-primary);
+    background-color: transparent;
+    border-color: var(--accent-primary);
+}
+
+#send-contact-message:hover {
+    cursor: pointer;
+    transition: background-color .2s linear;
+    transition: color .2s linear;
+    background-color: var(--accent-primary);
+    color: var(--background);
+}
+
+.social {
+    display: block;
+
+    img {
+        height: 1.2rem;
+        width: 1.2rem;
+        margin-right: .5rem;
+    }
+}
+
+@media (max-width: 500px) {
+
+    #hero {
+        height: calc(var(--default-section-height) - 5rem);
+        display: grid;
+        grid-template-areas: "hero_logo" "hero_text";
+        align-content: center;
+
+        padding: 5rem;
+    }
+
+    #header-cta-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-auto-flow: row;
+        gap: 1rem;
+    }
+
+    #header-features {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        margin-top: 6rem;
+        gap: 2rem;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    #services-cards {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding-bottom: 1rem;
+        border-bottom: var(--surface-border);
+    }
+
+    #contact-options-container {
+        width: 100%;
+        margin-top: 2rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-auto-flow: row;
+        gap: 2rem;
+    }
+}
