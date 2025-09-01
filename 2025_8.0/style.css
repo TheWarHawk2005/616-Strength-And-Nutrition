@@ -71,7 +71,7 @@ main {}
 
 section {
     width: 100%;
-    height: var(--default-section-height);
+    height: fit-content;
 
     padding-left: 15%;
     padding-right: 15%;
