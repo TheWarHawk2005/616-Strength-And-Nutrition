@@ -16,7 +16,7 @@ window.onload = function () {
 
         const userName = document.getElementById('user-name').value
         const userEmail = document.getElementById('user-email').value
-        const message = document.getElementById('contact-message').value
+        const contactMessage = document.getElementById('contact-message').value
         
         (async () => {
             try {
@@ -27,7 +27,7 @@ window.onload = function () {
                     },
                     body: JSON.stringify({
                         task: "check_form",
-                        body: { name: userName, email: userEmail, message: message }
+                        body: { name: userName, email: userEmail, message: contactMessage }
                     })
                 });
 
