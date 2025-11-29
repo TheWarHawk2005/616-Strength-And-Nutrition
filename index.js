@@ -16,6 +16,9 @@ window.onload = function () {
 
         const userName = document.getElementById('user-name').value
         const userEmail = document.getElementById('user-email').value
+
+        console.log(document.getElementById('contact-message').constructor.name);
+
         const contactMessage = document.getElementById('contact-message').value
         
         (async () => {
