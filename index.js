@@ -1,6 +1,5 @@
 elements = document.querySelectorAll('.package-price')
 console.log('Website programmed by Louis Harrison.')
-console.log('Thanks to email.js (emailjs.com), namecheap (namecheap.com) and GitHub (github.com).')
 
 for (i = 0; i < elements.length; i++) {
     elements[i].innerHTML = pricing[i].toString()
@@ -17,7 +16,7 @@ window.onload = function () {
 
         const userName = document.getElementById('user-name').value
         const userEmail = document.getElementById('user-email').value
-        const message = document.getElementById('message').value
+        const message = document.getElementById('contact-message').value
         
         (async () => {
             try {
