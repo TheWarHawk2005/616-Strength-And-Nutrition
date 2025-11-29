@@ -15,7 +15,7 @@ window.onload = function () {
     document.getElementById('contact-form').addEventListener('submit', function (event) {
         event.preventDefault();
 
-        const userName = document.getElementById('user-name').value
+        const userName = documen.getElementById('user-name').value
         const userEmail = document.getElementById('user-email').value
         const message = document.getElementById('message').value
         
