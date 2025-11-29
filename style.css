@@ -249,16 +249,16 @@ li {
             background-color: var(--background2);
             padding: 1rem;
 
-            input,#message {
+            input,#contact-message {
                 width: 100%;
                 margin-top: .5rem;
                 margin-bottom: 1rem;
             }
-            input:focus,#message:focus{
+            input:focus,#contact-message:focus{
                 background-color: var(--input-focus);
             }
 
-            #message {
+            #contact-message {
                 height: 10rem;
                 padding: 1rem;
                 background-color: var(--text);
