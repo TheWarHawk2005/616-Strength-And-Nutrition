@@ -11,16 +11,17 @@ function redirectToSignup() {
 }
 
 window.onload = function () {
-    document.getElementById('contact-form').addEventListener('submit', function (event) {
+    const form = document.getElementById('contact-form');
+
+    form.addEventListener('submit', async (event) => {
         event.preventDefault();
 
-        const userName = document.getElementById('user-name').value
-        const userEmail = document.getElementById('user-email').value
+        const userName = form.querySelector('#user-name').value;
+        const userEmail = form.querySelector('#user-email').value;
+        const contactMessage = form.querySelector('textarea[name="message"]').value;
 
-        console.log(document.getElementById('contact-message').constructor.name);
+        console.log({ userName, userEmail, contactMessage });
 
-        const contactMessage = document.getElementById('contact-message').value
-        
         (async () => {
             try {
                 const response = await fetch("https://tests--msmoneypenny.netlify.app/.netlify/functions/moneypenny", {
@@ -41,5 +42,4 @@ window.onload = function () {
             }
         })();
     });
-
 }
