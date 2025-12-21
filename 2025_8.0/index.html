@@ -18,7 +18,24 @@
 
 <body>
     <nav>
-
+        <div class="nav-link" onclick="window.location = '/'">
+            <span>Home</span>
+        </div>
+        <div class="nav-link" onclick="window.location = '/pricing'">
+            <span>Packages and Pricing</span>
+        </div>
+        <div class="nav-link" onclick="window.location = '/pricing/#camps-and-consults'">
+            <span>Camps and Consults</span>
+        </div>
+        <div class="nav-link" onclick="window.location = '/about'">
+            <span>About Us</span>
+        </div>
+        <div class="nav-link" onclick="window.location = '/pt'">
+            <span>Physical Therapy</span>
+        </div>
+        <div class="nav-link" onclick="window.location = '/#contact';scrollToHeader(0)">
+            <span>Contact</span>
+        </div>
     </nav>
     <main>
         <section id="hero">
@@ -26,14 +43,17 @@
                 <img id="hero_logo_img" src="./assets/ui/logo_white_no_background.png">
             </div>
             <div id="hero_text">
-                <h1>Get fit.</h1>
-                <h1>Get healthy.</h1>
-                <h1>Get strong.</h1>
+                <h1>Local Expertise.</h1>
+                <h1>Personalized Coaching.</h1>
+                <h1>Proven Results.</h1>
             </div>
         </section>
         <div id="header-cta-container">
-            <button id="header-cta-strength" class="header-cta">Explore Strength Packages</button>
-            <button id="header-cta-nutrition" class="header-cta">Explore Nutrition Packages</button>
+            <button id="header-cta-nutrition" class="header-cta" onclick="window.location = ('/pricing')">Explore
+                Nutrition Packages</button>
+
+            <button id="header-cta-strength" class="header-cta" onclick="window.location = ('/pricing')">Explore
+                Strength Packages</button>
         </div>
         <section id="general-sellpoints">
             <div id="scroll-prompt">
@@ -77,8 +97,8 @@
                             augment training.</p>
                     </div>
                 </div>
-                <p id="walton-notice-services">We have also partnered with Lisa Walton, PT, DPT to offer FREE physical
-                    therapy to ALL our clients, no matter which package you choose!</p>
+                <!-- <p id="walton-notice-services">We have also partnered with Lisa Walton, PT, DPT to offer FREE physical
+                    therapy to ALL our clients, no matter which package you choose!</p> -->
                 <h2>But You Don't Have to Choose</h2>
                 <p>Our programs are fantastic taken alone, <span class="stress">but their real power lies in
                         integration.</span> Take your
@@ -86,7 +106,7 @@
                     and your body.</p>
 
                 <div id="services-cta-container">
-                    <button id="compare-packages-cta">Compare Packages</button>
+                    <button id="compare-packages-cta" onclick="window.location = ('/pricing')">Compare Packages</button>
                 </div>
 
             </div>
@@ -117,7 +137,8 @@
                     <div id="send-contact-message-container">
                         <input id="send-contact-message" type="submit" value="Send Message">
                     </div>
-                    <input id="website" name="website" type="text" autocomplete="off" tabindex="-1" class="notahoneypot">
+                    <input id="website" name="website" type="text" autocomplete="off" tabindex="-1"
+                        class="notahoneypot">
                 </form>
 
                 <div id="socials">
@@ -141,7 +162,6 @@
     <footer>
         <span>616 Strength Lab LLC</span>
         <a>Privacy Policy</a>
-        <a>Terms and Conditions</a>
     </footer>
     <script src="index.js" async defer></script>
 </body>

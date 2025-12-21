@@ -1,15 +1,15 @@
 :root {
     /* Use for testing */
-    --background-cool: hsl(255, 30%, 4%);
+    --background-cool: hsl(260, 12%, 4%);
     --background-warm: hsl(0, 3%, 6%);
 
     --background: var(--background-cool);
 
-    --surface: hsl(231, 25%, 12%);
-    --surface-border: 2px solid hsl(212, 28%, 13%);
-    --surface-transparent: hsla(255, 100%, 2%, 0.85);
+    --surface: hsl(231, 12%, 8%);
+    --surface-border: 2px solid hsl(225, 19%, 16%);
+    --surface-transparent: hsla(260, 33%, 4%, 0.85);
 
-    --input-background: hsl(231, 25%, 20%);
+    --input-background: hsl(231, 15%, 18%);
 
     --text-important: hsl(0, 0%, 85%);
     --text-default: hsl(0, 0%, 60%);
@@ -23,8 +23,6 @@
 
     --selection: hsla(0, 67%, 35%, 0.801);
 
-
-
     --nav-height: 4rem;
     --useable-height: calc(100vh - var(--nav-height));
     --default-section-height: calc(var(--useable-height) - 4rem)
@@ -33,6 +31,16 @@
 @font-face {
     font-family: "Chivo";
     src: url("./assets/fonts/Chivo/Chivo-VariableFont_wght.ttf");
+}
+
+@font-face {
+    font-family: "Crimson Pro";
+    src: url(assets/fonts/Crimson_Pro/CrimsonPro-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: "Bodoni Moda";
+    src: url(assets/fonts/Bodoni_Moda/BodoniModa-VariableFont_opsz,wght.ttf);
 }
 
 * {
@@ -67,7 +75,10 @@ button {
     font-size: 1.2rem;
 }
 
-main {}
+main {
+    padding-bottom: 2rem;
+
+}
 
 section {
     width: 100%;
@@ -76,6 +87,7 @@ section {
     padding-left: 15%;
     padding-right: 15%;
     padding-top: 2rem;
+    scroll-margin-top: var(--nav-height);
 }
 
 h1 {
@@ -140,12 +152,30 @@ textarea:focus {
 
 nav {
     height: var(--nav-height);
+    width: 100%;
     background-color: var(--surface-transparent);
     top: 0px;
     position: sticky;
 
     backdrop-filter: blur(2px);
     z-index: 5;
+    display: grid;
+    grid-template-columns: repeat(6, max-content);
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.nav-link {
+    color: var(--text-default);
+    transition: color .2s linear;
+    display: block;
+    cursor: pointer;
+}
+
+.nav-link:hover {
+    color: var(--accent-primary)
 }
 
 footer {
@@ -161,20 +191,19 @@ footer {
 @media (max-width: 1000px) {
     section {
         width: 100%;
-        height: var(--default-section-height);
-
         padding-left: 2rem;
         padding-right: 2rem;
         padding-top: 2rem;
     }
 
+    nav {
+        display: none;
+    }
 }
 
 @media (max-width: 500px) {
     section {
         width: 100%;
-        height: var(--default-section-height);
-
         padding-left: 1rem;
         padding-right: 1rem;
         padding-top: 2rem;

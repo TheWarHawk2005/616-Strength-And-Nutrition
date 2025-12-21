@@ -1,3 +1,8 @@
+main {
+    /* account for non-anchored background of contact div */
+    padding-bottom: 0rem;
+}
+
 /* ------------------------------ HERO SECTION ------------------------------ */
 #hero {
     height: calc(var(--default-section-height) - 5rem);
@@ -74,25 +79,25 @@
 }
 
 #header-cta-strength {
+    color: var(transparent);
+    background-color: var(--accent-primary);
+    border-color: var(--accent-primary);
+}
+
+#header-cta-strength:hover {
+    color: var(--accent-primary);
+    background-color: transparent;
+}
+
+#header-cta-nutrition {
     color: var(--accent-primary);
     background-color: transparent;
     border-color: var(--accent-primary);
 }
 
-#header-cta-strength:hover {
-    color: var(--background);
-    background-color: var(--accent-primary);
-}
-
-#header-cta-nutrition {
-    color: var(--accent-secondary);
-    background-color: transparent;
-    border-color: var(--accent-secondary);
-}
-
 #header-cta-nutrition:hover {
     color: var(--background);
-    background-color: var(--accent-secondary);
+    background-color: var(--accent-primary);
 }
 
 /* ----------------------- General Sellpoints Section ----------------------- */

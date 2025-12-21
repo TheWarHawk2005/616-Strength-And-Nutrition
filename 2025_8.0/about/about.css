@@ -1,0 +1,108 @@
+body {
+    width: 100%;
+    background-color: var(--background);
+    background-image: none;
+    font-family: "Chivo";
+    font-size: 1.2rem;
+    font-weight: var(--font-weight);
+
+    color: var(--text-default)
+}
+
+main {
+    width: 100%;
+    min-height: var(--useable-height);
+    background-image: url('/assets/art/grit_blue_transparent.png');
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+h1 {
+    margin-bottom: 2rem;
+}
+
+#about {
+    margin-bottom: 3rem;
+}
+
+#about-container,
+#coaches-container {
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+
+}
+
+#coaches-container {
+    flex-direction: row-reverse;
+}
+
+#about-image,
+#coaches-image {
+    width: 30%;
+}
+
+#about-text,
+#coaches-text {
+    min-width: 60%;
+    background-color: var(--surface);
+    border-radius: 1rem;
+    padding: 2rem;
+}
+
+#about-text {
+    margin-left: -1rem;
+}
+
+#coaches-text {
+    margin-right: -1rem;
+    z-index: 1;
+}
+
+.bio:not(:last-child) {
+    margin-bottom: 2rem;
+}
+
+.coach-title {
+    font-weight: bold;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+@media (max-width: 1000px) {
+    section {
+        width: 100%;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-top: 2rem;
+    }
+
+    #about-container,
+    #coaches-container {
+        flex-direction: column;
+    }
+
+    #about-image,
+    #coaches-image {
+        height: 20lvh;
+        width: 100%;
+        object-fit: cover;
+        object-position: 50% 70%;
+    }
+
+    #coaches-image {
+        object-position: 50% 23%;
+
+    }
+
+    #about-text,
+    #coaches-text {
+        margin:0px;
+        margin-top: -1rem;
+    }
+}
