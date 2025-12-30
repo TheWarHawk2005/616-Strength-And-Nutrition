@@ -208,7 +208,7 @@ main {
     padding-top: 6rem;
     padding-bottom: 6rem;
     background-color: var(--background);
-    background-image: linear-gradient(to top, transparent, var(--background)), url(./assets/art/grit_blue_transparent.png);
+    background-image: linear-gradient(to top, transparent, var(--background)), url(https://616strength.com/2026_1.0/assets/art/grit_blue_transparent.png);
     background-size: cover;
 }
 

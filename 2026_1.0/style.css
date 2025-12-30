@@ -30,17 +30,17 @@
 
 @font-face {
     font-family: "Chivo";
-    src: url("./assets/fonts/Chivo/Chivo-VariableFont_wght.ttf");
+    src: url("https://616strength.com/2026_1.0/assets/fonts/Chivo/Chivo-VariableFont_wght.ttf");
 }
 
 @font-face {
     font-family: "Crimson Pro";
-    src: url(assets/fonts/Crimson_Pro/CrimsonPro-VariableFont_wght.ttf);
+    src: url(https://616strength.com/2026_1.0/assets/fonts/Crimson_Pro/CrimsonPro-VariableFont_wght.ttf);
 }
 
 @font-face {
     font-family: "Bodoni Moda";
-    src: url(assets/fonts/Bodoni_Moda/BodoniModa-VariableFont_opsz,wght.ttf);
+    src: url(https://616strength.com/2026_1.0/assets/fonts/Bodoni_Moda/BodoniModa-VariableFont_opsz,wght.ttf);
 }
 
 * {
@@ -55,7 +55,7 @@
 body {
     width: 100%;
     background-color: var(--background-dark);
-    background-image: url('./assets/art/weights_darker.jpg');
+    background-image: url('https://616strength.com/2026_1.0/assets/art/weights_darker.jpg');
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
