@@ -1,0 +1,74 @@
+{
+    "packages": [
+        {
+            "id": "strength-online",
+            "name": "Online Strength",
+            "price": 150,
+            "interval": "month",
+            "format": "online",
+            "feature_indexes": [
+                0,
+                3,
+                5
+            ]
+        },
+        {
+            "id": "strength-in-person",
+            "name": "Strength",
+            "price": 230,
+            "interval": "month",
+            "format": "in-person",
+            "feature_indexes": [
+                1,
+                2,
+                3,
+                5
+            ]
+        },
+        {
+            "id": "strength-nutrition",
+            "name": "Strength & Nutrition",
+            "price": 300,
+            "interval": "month",
+            "format": "in-person",
+            "feature_indexes": [
+                1,
+                2,
+                3,
+                4,
+                5
+            ]
+        },
+        {
+            "id": "nutrition-online",
+            "name": "Nutrition",
+            "price": 100,
+            "interval": "month",
+            "format": "online",
+            "feature_indexes": [
+                4,
+                5
+            ]
+        }
+    ],
+    "camps_and_consults": [
+        {
+            "id": "camps",
+            "name": "Camp or Consult",
+            "price": 85,
+            "format": "online",
+            "feature_indexes": [
+                6
+            ]
+        }
+    ],
+    "features": [
+        "Online strength coaching",
+        "Two one-hour strength training sessions per week",
+        "Train with a small cohort *",
+        "Individualized strength programming",
+        "Online nutrition coaching by a certified nutrition coach **",
+        "Full access to coaching/progress tracking app",
+        "Contact us for a one-on-one consultation or to host a camp."
+        ]
+}
