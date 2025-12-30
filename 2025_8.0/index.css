@@ -114,60 +114,45 @@ main {
     text-align: center;
     font-size: 1rem;
     color: var(--text-transparent);
+    margin-bottom: 6rem;
 }
 
-#header-features {
+#mission {
     width: 100%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    margin-top: 6rem;
-    gap: 2rem;
+    background-color: var(--background);
 }
 
-.feature-container {
+#mission-container {
     text-align: center;
 
-    p {
-        margin-top: 1rem;
+    h1 {
+        color: var(--accent-primary)
+    }
+
+    *:not(:last-child) {
+        margin-bottom: 1rem;
     }
 }
 
 #services {
     height: fit-content;
-    padding-top: 6rem;
     background-color: var(--background);
-
 }
 
 #services-header {
     text-align: center;
+    margin-bottom: 2rem;
 
-    p {
-        margin-top: .5rem;
-    }
 }
 
 #services-body {
-    margin-top: 2rem;
-    padding: 2rem;
-
-    background-color: var(--surface);
-    border-radius: 1rem;
 
     h2 {
         text-align: center;
-        margin-top: 6rem;
-    }
-
-    p {
-        margin-top: 1rem;
-    }
-
-    #walton-notice-services {
-        margin-top: 1rem;
-        font-weight: 500;
     }
 }
+
+#services-outro {}
 
 #services-cards {
     display: grid;
@@ -184,6 +169,9 @@ main {
 
 .service-card {
     text-align: center;
+    background-color: var(--surface);
+    padding: 1rem;
+    border-radius: 1rem;
 
     p {
         margin-top: 1rem;
@@ -293,6 +281,25 @@ main {
         height: 1.2rem;
         width: 1.2rem;
         margin-right: .5rem;
+    }
+}
+
+@media (max-width: 1000px) {
+
+    #mission-container {
+        flex-direction: column;
+    }
+
+
+    #mission-image {
+        width: 100%;
+        object-fit: cover;
+        object-position: 50% 70%;
+
+    }
+
+    #mission-text {
+        width: 100%;
     }
 }
 

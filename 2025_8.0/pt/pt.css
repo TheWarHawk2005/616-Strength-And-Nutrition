@@ -23,130 +23,59 @@ h3 {
     margin-bottom: 1rem;
 }
 
-#header {
+h1 {
     margin-bottom: 2rem;
 }
 
-.card-container {
-    display: grid;
+#about-container {
+    height: fit-content;
     width: 100%;
-    height: fit-content;
-    grid-template-columns: repeat(4, minmax(10rem, 1fr));
-    grid-auto-flow: column;
-    justify-items: center;
-    gap: 1rem;
-}
-
-.package {
-    position: relative;
-    /* needed so absolute overlay is contained */
-    width: 100%;
-    height: fit-content;
-    background-color: var(--surface);
-    border-radius: 1rem;
-    overflow: hidden;
-    transition: .3s ease;
-    cursor: pointer;
-}
-
-.package:hover {
-    width: calc(100% + 1rem);
-
-    .package-header {
-        padding-left: 1.5rem;
-        padding-right: 1.5rem;
-    }
-
-    .package-feature {
-        padding-left: 1.5rem;
-        padding-right: 1.5rem;
-
-    }
-}
-
-.package:hover .package-overlay {
-    opacity: 1;
-    background-color: hsla(258, 100%, 2%, 0.625);
-}
-
-.package-header {
-    height: fit-content;
-    text-align: center;
-    background-color: var(--accent-primary);
-    padding: 1rem;
-
-    transition: .3s ease;
-
-}
-
-.dollar-sign {
-    font-size: 2rem;
-    font-weight: bold;
-    color: var(--text-important)
-}
-
-.package-price {
-    font-size: 3rem;
-    font-weight: bold;
-    color: var(--text-important)
-}
-
-.package-interval {
-    font-size: .8rem;
-    color: var(--surface);
-}
-
-.package-name {
-    font-size: 1.5rem;
-    color: var(--surface);
-    font-weight: bold;
-}
-
-.package-features-container {
-    font-size: 1rem;
-    border-radius: 0rem 0rem 1rem 1rem;
-    border: 2px solid var(--input-background);
-    border-top: none;
-}
-
-.package-feature {
-    padding: 1rem;
-
-    transition: .3s ease;
-
-}
-
-.package-feature:nth-child(even) {
-    background-color: var(--input-background);
-}
-
-.package-overlay {
-    transition: .3s ease;
-    opacity: 0;
-    position: absolute;
-    inset: 0;
-    /* top:0; right:0; bottom:0; left:0; */
     display: flex;
     align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: #fff;
-    /* ensure text is bright */
-    z-index: 2;
-    background: rgba(0, 0, 0, 0);
-    /* start transparent */
-    backdrop-filter: blur(1px);
+    flex-direction: row;
+
 }
 
-#disclaimers {
-    margin-top: 2rem;
-    font-size: .8rem;
-    text-align: center;
-
-    span {
-        display: block;
-    }
+#about-image,
+#coaches-image {
+    width: 30%;
 }
+
+#about-text {
+    min-width: 60%;
+    background-color: var(--surface);
+    border-radius: 1rem;
+    padding: 2rem;
+}
+
+#about-text {
+    margin-left: -1rem;
+}
+
+#overview, #lisa-bio {
+    margin-bottom: 2rem;
+}
+
+#outbound-lisa {
+    padding: .5rem 2rem;
+    border-radius: 3rem;
+    border: 2px solid var(--accent-primary);
+    font-size: 1.2rem;
+    color: var(--surface);
+    background-size: 300% 100%;
+    background-image: linear-gradient(to right, var(--accent-primary), var(--accent-primary), #083d5c, #1d9e74);
+    transition: all .3s ease-in-out;
+
+}
+
+#outbound-lisa:hover {
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    background-position: 100% 0;
+    border-color: var(--text-important);
+    color: var(--text-important)
+}
+
 
 
 @media (max-width: 1000px) {
@@ -157,25 +86,24 @@ h3 {
         padding-top: 2rem;
     }
 
-    .card-container {
-        grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-        grid-auto-flow: row;
+    #about-container {
+        flex-direction: column;
     }
-}
 
-@media (max-width: 500px) {
-    section {
+    #about-image {
+        height: 20lvh;
         width: 100%;
-
-        padding-left: 1rem;
-        padding-right: 1rem;
-        padding-top: 2rem;
+        object-fit: cover;
+        object-position: 50% 70%;
     }
 
-    .card-container {
-        grid-template-columns: 1fr;
-        grid-auto-flow: row;
-        gap: 2rem;
+    #coaches-image {
+        object-position: 50% 23%;
+
     }
 
+    #about-text {
+        margin: 0px;
+        margin-top: -1rem;
+    }
 }
