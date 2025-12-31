@@ -30,7 +30,7 @@
 
 @font-face {
     font-family: "Chivo";
-    src: url("./assets/fonts/Chivo/Chivo-VariableFont_wght.ttf");
+    src: url("assets/fonts/Chivo/Chivo-VariableFont_wght.ttf");
 }
 
 @font-face {
@@ -55,7 +55,7 @@
 body {
     width: 100%;
     background-color: var(--background-dark);
-    background-image: url('./assets/art/weights_darker.jpg');
+    background-image: url('assets/art/weights_darker.jpg');
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
