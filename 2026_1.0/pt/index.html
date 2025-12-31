@@ -6,36 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Physical Therapy - 616 Strength & Nutrition</title>
-    <link rel="stylesheet" href="https://616strength.com/2026_1.0/style.css">
-    <link rel="stylesheet" href="https://616strength.com/2026_1.0/pt/pt.css">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="pt.css">
 </head>
 
 <body>
     <nav>
-        <div class="nav-link" onclick="window.location = 'https://616strength.com/2026_1.0/'">
-            <span>Home</span>
+        <div id="mobile-nav-container">
+            <span id="mobile-wordmark">616 Strength & Nutrition</span>
+            <button id="nav-hamburger" onclick="toggleNavLinks()"></button>
         </div>
-        <div class="nav-link" onclick="window.location = 'https://616strength.com/2026_1.0/pricing'">
-            <span>Packages and Pricing</span>
-        </div>
-        <div class="nav-link" onclick="window.location = 'https://616strength.com/2026_1.0/pricing/#camps-and-consults'">
-            <span>Camps and Consults</span>
-        </div>
-        <div class="nav-link" onclick="window.location = 'https://616strength.com/2026_1.0/about'">
-            <span>About Us</span>
-        </div>
-        <div class="nav-link" onclick="window.location = 'https://616strength.com/2026_1.0/pt'">
-            <span>Physical Therapy</span>
-        </div>
-        <div class="nav-link" onclick="window.location = 'https://616strength.com/2026_1.0/#contact';scrollToHeader(0)">
-            <span>Contact</span>
+        <div id="nav-links-container">
+            <div class="nav-link" onclick="window.location = '/'">
+                <span>Home</span>
+            </div>
+            <div class="nav-link" onclick="window.location = '/pricing'">
+                <span>Packages & Pricing</span>
+            </div>
+            <div class="nav-link" onclick="window.location = '/pricing/#camps-and-consults'">
+                <span>Camps & Consults</span>
+            </div>
+            <div class="nav-link" onclick="window.location = '/about'">
+                <span>About Us</span>
+            </div>
+            <div class="nav-link" onclick="window.location = '/pt'">
+                <span>Physical Therapy</span>
+            </div>
+            <div class="nav-link" onclick="window.location = '/#contact';scrollToHeader(0)">
+                <span>Contact</span>
+            </div>
         </div>
     </nav>
     <main>
         <section id="pt">
             <h1>Physical Therapy</h1>
             <div id="about-container">
-                <img id="about-image" src="https://616strength.com/2026_1.0/assets/art/lisa-walton-blue.jpg">
+                <img id="about-image" src="/assets/art/lisa-walton-blue.jpg">
 
                 <div id="about-text">
                     <p id="overview">
@@ -89,7 +95,7 @@
         <span>616 Strength Lab LLC</span>
         <a href="https://616strength.com/privacy-policy">Privacy Policy</a>
     </footer>
+    <script src="/navbar.js" async defer></script>
 </body>
-
 
 </html>

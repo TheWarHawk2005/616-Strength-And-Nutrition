@@ -78,7 +78,7 @@ async function scrollToHeader() {
 }
 
 async function getPricingDetails() {
-    const response = await fetch('https://616strength.com/2026_1.0/details.json')
+    const response = await fetch('/details.json')
     const details = await response.json()
     console.log(details)
     updatePricing(details)

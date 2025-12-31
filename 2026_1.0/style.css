@@ -30,17 +30,17 @@
 
 @font-face {
     font-family: "Chivo";
-    src: url("https://616strength.com/2026_1.0/assets/fonts/Chivo/Chivo-VariableFont_wght.ttf");
+    src: url("./assets/fonts/Chivo/Chivo-VariableFont_wght.ttf");
 }
 
 @font-face {
     font-family: "Crimson Pro";
-    src: url(https://616strength.com/2026_1.0/assets/fonts/Crimson_Pro/CrimsonPro-VariableFont_wght.ttf);
+    src: url(assets/fonts/Crimson_Pro/CrimsonPro-VariableFont_wght.ttf);
 }
 
 @font-face {
     font-family: "Bodoni Moda";
-    src: url(https://616strength.com/2026_1.0/assets/fonts/Bodoni_Moda/BodoniModa-VariableFont_opsz,wght.ttf);
+    src: url(assets/fonts/Bodoni_Moda/BodoniModa-VariableFont_opsz,wght.ttf);
 }
 
 * {
@@ -55,7 +55,7 @@
 body {
     width: 100%;
     background-color: var(--background-dark);
-    background-image: url('https://616strength.com/2026_1.0/assets/art/weights_darker.jpg');
+    background-image: url('./assets/art/weights_darker.jpg');
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
@@ -159,12 +159,42 @@ nav {
 
     backdrop-filter: blur(2px);
     z-index: 5;
+}
+
+#nav-links-container {
+    height: 100%;
     display: grid;
+    padding-left: 15%;
+    padding-right: 15%;
     grid-template-columns: repeat(6, max-content);
-    justify-content: center;
+    justify-content: space-between;
     justify-items: center;
     align-items: center;
-    gap: 3rem;
+}
+
+#mobile-nav-container {
+    display: none;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    height: 100%;
+    grid-template-columns: repeat(2, max-content);
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+    gap: 1rem;
+    font-weight: bold;
+}
+
+#nav-hamburger {
+    height: var(--nav-height);
+    width: var(--nav-height);
+    background-color: transparent;
+    border: none;
+    outline: none;
+    background-position: center;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-image: url(assets/ui/logo_stripes_white_no_background.png)
 }
 
 .nav-link {
@@ -189,6 +219,10 @@ footer {
 }
 
 @media (max-width: 1000px) {
+    :root {
+        --nav-height: 3rem;
+    }
+
     section {
         width: 100%;
         padding-left: 2rem;
@@ -197,7 +231,13 @@ footer {
     }
 
     nav {
-        display: none;
+        font-size: .8rem;
+        gap: 1rem;
+    }
+
+    #nav-links-container {
+        padding-left: 2rem;
+        padding-right: 2rem;
     }
 }
 
@@ -208,5 +248,22 @@ footer {
         padding-right: 1rem;
         padding-top: 2rem;
     }
+
+    #nav-links-container {
+        display: none;
+        grid-auto-flow: row;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(5, 1fr);
+        gap: 1rem;
+        background-color: var(--surface-transparent);
+        height: fit-content;
+        backdrop-filter: blur(2px);
+    }
+
+    #mobile-nav-container {
+        display: grid;
+    }
+
+    #nav-hamburger {}
 
 }

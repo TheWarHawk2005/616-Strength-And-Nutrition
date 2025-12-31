@@ -15,18 +15,6 @@ async function scrollToHeader(delay = 1000) {
         delay)
 }
 
-function matchImageHeight() {
-    const text = document.getElementById('mission-text');
-    const image = document.getElementById('mission-image');
-
-    const textHeight = text.offsetHeight;
-    image.style.height = textHeight + 'px';
-}
-
-window.addEventListener('load', matchImageHeight);
-window.addEventListener('resize', matchImageHeight);
-
-
 // copied old code from website
 // TODO: Merge homepage and verify contact box works. MUST BE RAN ON 616strength.com TO PASS CORS
 window.onload = function () {

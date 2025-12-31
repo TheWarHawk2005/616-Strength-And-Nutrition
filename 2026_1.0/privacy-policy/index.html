@@ -6,29 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Physical Therapy - 616 Strength & Nutrition</title>
-    <link rel="stylesheet" href="https://616strength.com/2026_1.0/style.css">
-    <link rel="stylesheet" href="https://616strength.com/2026_1.0/privacy/privacy.css">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="privacy.css">
 </head>
 
 <body>
     <nav>
-        <div class="nav-link" onclick="window.location = 'https://616strength.com/2026_1.0/'">
-            <span>Home</span>
+        <div id="mobile-nav-container">
+            <span id="mobile-wordmark">616 Strength & Nutrition</span>
+            <button id="nav-hamburger" onclick="toggleNavLinks()"></button>
         </div>
-        <div class="nav-link" onclick="window.location = 'https://616strength.com/2026_1.0/pricing'">
-            <span>Packages and Pricing</span>
-        </div>
-        <div class="nav-link" onclick="window.location = 'https://616strength.com/2026_1.0/pricing/#camps-and-consults'">
-            <span>Camps and Consults</span>
-        </div>
-        <div class="nav-link" onclick="window.location = 'https://616strength.com/2026_1.0/about'">
-            <span>About Us</span>
-        </div>
-        <div class="nav-link" onclick="window.location = 'https://616strength.com/2026_1.0/pt'">
-            <span>Physical Therapy</span>
-        </div>
-        <div class="nav-link" onclick="window.location = 'https://616strength.com/2026_1.0/#contact';scrollToHeader(0)">
-            <span>Contact</span>
+        <div id="nav-links-container">
+            <div class="nav-link" onclick="window.location = '/'">
+                <span>Home</span>
+            </div>
+            <div class="nav-link" onclick="window.location = '/pricing'">
+                <span>Packages & Pricing</span>
+            </div>
+            <div class="nav-link" onclick="window.location = '/pricing/#camps-and-consults'">
+                <span>Camps & Consults</span>
+            </div>
+            <div class="nav-link" onclick="window.location = '/about'">
+                <span>About Us</span>
+            </div>
+            <div class="nav-link" onclick="window.location = '/pt'">
+                <span>Physical Therapy</span>
+            </div>
+            <div class="nav-link" onclick="window.location = '/#contact';scrollToHeader(0)">
+                <span>Contact</span>
+            </div>
         </div>
     </nav>
     <main>
@@ -36,13 +42,15 @@
             <h1>Privacy Policy</h1>
             <div id="text-container">
                 <ul>
-                    <li>Unless you email us via the contact box, we look at and store <a target="_blank" href="https://www.merriam-webster.com/dictionary/none">none</a> of the information we could
+                    <li>Unless you email us via the contact box, we look at and store <a target="_blank"
+                            href="https://www.merriam-webster.com/dictionary/none">none</a> of the information we could
                         glean
                         from your device when you access our website.
                     </li>
                     <li>If our web hosts or other tools do, we don't know anything about it.</li>
                     <li>Don't be stupid online. Neither 616 Strength Lab LLC (D.B.A. 616 Strength and Nutrition), nor
-                        Kristin Harrison, nor Robert Harrison, nor Louis (the tech guy) claim any responsability for your
+                        Kristin Harrison, nor Robert Harrison, nor Louis (the tech guy) claim any responsability for
+                        your
                         information.
                     </li>
                     <li>If you DO send us an email via the contact box, Louis the Tech Guy runs it through a spam filter
@@ -59,7 +67,7 @@
         <span>616 Strength Lab LLC</span>
         <a href="https://616strength.com/privacy-policy">Privacy Policy</a>
     </footer>
+    <script src="/navbar.js" async defer></script>
 </body>
-
 
 </html>

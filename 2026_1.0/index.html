@@ -9,48 +9,53 @@
     <meta name="description"
         content="West Michigan-based private garage gym, offering in-person and online barbell coaching, as well as certified nutrition coaching services to people of all ages and abilities.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://616strength.com/2026_1.0/style.css">
-    <link rel="stylesheet" href="https://616strength.com/2026_1.0/index.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
     <!-- TODO: Make links absolute -->
     <nav>
-        <div class="nav-link" onclick="window.location = 'https://616strength.com/2026_1.0/'">
-            <span>Home</span>
+        <div id="mobile-nav-container">
+            <span id="mobile-wordmark">616 Strength & Nutrition</span>
+            <button id="nav-hamburger" onclick="toggleNavLinks()"></button>
         </div>
-        <div class="nav-link" onclick="window.location = 'https://616strength.com/2026_1.0/pricing'">
-            <span>Packages and Pricing</span>
-        </div>
-        <div class="nav-link" onclick="window.location = 'https://616strength.com/2026_1.0/pricing/#camps-and-consults'">
-            <span>Camps and Consults</span>
-        </div>
-        <div class="nav-link" onclick="window.location = 'https://616strength.com/2026_1.0/about'">
-            <span>About Us</span>
-        </div>
-        <div class="nav-link" onclick="window.location = 'https://616strength.com/2026_1.0/pt'">
-            <span>Physical Therapy</span>
-        </div>
-        <div class="nav-link" onclick="window.location = 'https://616strength.com/2026_1.0/#contact';scrollToHeader(0)">
-            <span>Contact</span>
+        <div id="nav-links-container">
+            <div class="nav-link" onclick="window.location = '/'">
+                <span>Home</span>
+            </div>
+            <div class="nav-link" onclick="window.location = '/pricing'">
+                <span>Packages & Pricing</span>
+            </div>
+            <div class="nav-link" onclick="window.location = '/pricing/#camps-and-consults'">
+                <span>Camps & Consults</span>
+            </div>
+            <div class="nav-link" onclick="window.location = '/about'">
+                <span>About Us</span>
+            </div>
+            <div class="nav-link" onclick="window.location = '/pt'">
+                <span>Physical Therapy</span>
+            </div>
+            <div class="nav-link" onclick="window.location = '/#contact';scrollToHeader(0)">
+                <span>Contact</span>
+            </div>
         </div>
     </nav>
     <main>
         <section id="hero">
-            <div id="hero_logo">
-                <img id="hero_logo_img" src="./assets/ui/logo_white_no_background.png">
+            <div id="hero-logo">
+                <img id="hero-logo-img" src="./assets/ui/logo_white_no_background.png">
             </div>
-            <div id="hero_text">
-                <h1>Local Expertise.</h1>
+            <div id="hero-text">
                 <h1>Personalized Coaching.</h1>
                 <h1>Proven Results.</h1>
             </div>
         </section>
         <div id="header-cta-container">
-            <button id="header-cta-nutrition" class="header-cta" onclick="window.location = ('https://616strength.com/2026_1.0/pricing')">Explore
+            <button id="header-cta-nutrition" class="header-cta" onclick="window.location = ('/pricing')">Explore
                 Nutrition Packages</button>
 
-            <button id="header-cta-strength" class="header-cta" onclick="window.location = ('https://616strength.com/2026_1.0/pricing')">Explore
+            <button id="header-cta-strength" class="header-cta" onclick="window.location = ('/pricing')">Explore
                 Strength Packages</button>
         </div>
         <section id="mission">
@@ -78,8 +83,8 @@
                     <div class="service-card">
                         <h3>Strength</h3>
                         <p><i>Not just about looking good, our strength program utilizes barbells to build <b>real,
-                                practical
-                                strength</b>, improve balance, and more.</i></p>
+                                    practical
+                                    strength</b>, improve balance, and more.</i></p>
                     </div>
                     <div class="service-card">
                         <h3>Nutrition</h3>
@@ -92,7 +97,7 @@
 
 
                 <div id="services-cta-container">
-                    <button id="compare-packages-cta" onclick="window.location = ('https://616strength.com/2026_1.0/pricing')">Compare Packages</button>
+                    <button id="compare-packages-cta" onclick="window.location = ('/pricing')">Compare Packages</button>
                 </div>
 
             </div>
@@ -142,9 +147,10 @@
     </main>
     <footer>
         <span>616 Strength Lab LLC</span>
-        <a href="https://616strength.com/2026_1.0/privacy-policy">Privacy Policy</a>
+        <a href="https://616strength.com/privacy-policy">Privacy Policy</a>
     </footer>
     <script src="index.js" async defer></script>
+    <script src="/navbar.js" async defer></script>
 </body>
 
 </html>
@@ -159,6 +165,5 @@ injury), we are here to serve you. Come, get strong with us!
 
 
 Optimize your fitness journey by combining strength training with a nutrition plan made for you and your body
-
 
 -->
