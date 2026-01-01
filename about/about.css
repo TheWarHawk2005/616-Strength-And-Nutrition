@@ -12,7 +12,7 @@ body {
 main {
     width: 100%;
     min-height: var(--useable-height);
-    background-image: url('https://616strength.com/2026_1.0/assets/art/grit_blue_transparent.png');
+    background-image: url('https://616strength.com/assets/art/grit_blue_transparent.png');
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
