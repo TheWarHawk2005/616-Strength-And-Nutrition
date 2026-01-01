@@ -48,5 +48,7 @@ window.onload = function () {
                 console.error("Fetch failed:", err);
             }
         })();
+        alert('Message sent! 🏋️‍♂️')
+        window.location = 'https://616strength.com'
     });
 }
