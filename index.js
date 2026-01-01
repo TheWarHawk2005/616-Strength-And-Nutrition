@@ -1,15 +1,22 @@
-elements = document.querySelectorAll('.package-price')
-console.log('Website programmed by Louis Harrison.')
+console.log('Why hello there. This website programmed by Louis Harrison');
+scrollToHeader()
 
-for (i = 0; i < elements.length; i++) {
-    elements[i].innerHTML = pricing[i].toString()
+async function scrollToHeader(delay = 1000) {
+    setTimeout(() => {
+        // check for hash in url
+        const scrollToId = window.location.hash.slice(1, window.location.hash.length)
+        if (scrollToId) {
+            document.getElementById(scrollToId).scrollIntoView({ behavior: "smooth" })
+            console.log('Scrolled to', scrollToId);
+        } else {
+            console.log('Provide a #section to scroll a section into view on page load')
+        }
+    },
+        delay)
 }
 
-function redirectToSignup() {
-    //alert('616 Strength and Nutrition uses Turnkey to handle transactions and scheduling. Mind if we redirect you?')
-    window.open('https://app.turnkey.coach/coaching_tiers/74')
-}
-
+// copied old code from website
+// TODO: Merge homepage and verify contact box works. MUST BE RAN ON 616strength.com TO PASS CORS
 window.onload = function () {
     const form = document.getElementById('contact-form');
 

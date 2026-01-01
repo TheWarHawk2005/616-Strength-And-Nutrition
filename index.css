@@ -1,0 +1,353 @@
+main {
+    /* account for non-anchored background of contact div */
+    padding-bottom: 0rem;
+}
+
+/* ------------------------------ HERO SECTION ------------------------------ */
+#hero {
+    height: calc(var(--default-section-height) - 5rem);
+    display: grid;
+    grid-template-areas: "hero-logo hero-text";
+    grid-template-columns: 1fr 1fr;
+    align-content: center;
+    align-items: center;
+
+    padding: 5rem;
+
+    /* ===== Fixed background ===== */
+
+    /*background-color: var(--background-dark);
+    background-image: url('./assets/art/weights_darker.jpg');
+    background-size: cover;
+    background-repeat: no-repeat; */
+}
+
+#hero-logo {
+    height: fit-content;
+    width: 100%;
+    grid-area: hero-logo;
+
+}
+
+#hero-logo-img {
+    height: auto;
+    width: 100%;
+}
+
+#hero-text {
+    height: 100%;
+    width: 100%;
+    grid-area: hero-text;
+    color: var(--text-light);
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-auto-flow: row;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+#header-cta-container {
+    width: fit-content;
+    margin: 0 auto;
+    padding: 1rem 2rem 0rem;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+
+    position: relative;
+    z-index: 2;
+    margin-bottom: -2px;
+    /* pull it down so it covers the section border */
+    background-color: var(--background);
+    border: 2px solid var(--surface);
+    border-radius: 2rem 2rem 0rem 0rem;
+    border-bottom: none;
+    /* so it blends */
+}
+
+.header-cta {
+    padding: .5rem 2rem;
+    border-radius: 3rem;
+    border: 2px solid;
+    font-size: 1.2rem;
+}
+
+.header-cta:hover {
+    cursor: pointer;
+    transition: background-color .2s linear;
+    transition: color .2s linear
+}
+
+#header-cta-strength {
+    color: var(transparent);
+    background-color: var(--accent-primary);
+    border-color: var(--accent-primary);
+}
+
+#header-cta-strength:hover {
+    color: var(--accent-primary);
+    background-color: transparent;
+}
+
+#header-cta-nutrition {
+    color: var(--accent-primary);
+    background-color: transparent;
+    border-color: var(--accent-primary);
+}
+
+#header-cta-nutrition:hover {
+    color: var(--background);
+    background-color: var(--accent-primary);
+}
+
+/* ----------------------- General Sellpoints Section ----------------------- */
+
+#general-sellpoints {
+    background-color: var(--background);
+    height: fit-content;
+
+    padding-top: 1rem;
+    border-top: 2px solid var(--surface)
+}
+
+#scroll-prompt {
+    text-align: center;
+    font-size: 1rem;
+    color: var(--text-transparent);
+    margin-bottom: 6rem;
+}
+
+#mission {
+    width: 100%;
+    background-color: var(--background);
+}
+
+#mission-container {
+    text-align: center;
+
+    h1 {
+        color: var(--accent-primary)
+    }
+
+    *:not(:last-child) {
+        margin-bottom: 1rem;
+    }
+}
+
+#services {
+    height: fit-content;
+    background-color: var(--background);
+}
+
+#services-header {
+    text-align: center;
+    margin-bottom: 2rem;
+
+}
+
+#services-body {
+
+    h2 {
+        text-align: center;
+    }
+}
+
+#services-outro {}
+
+#services-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: var(--surface-border);
+
+    h2 {
+        margin-top: 0rem;
+    }
+
+}
+
+.service-card {
+    text-align: center;
+    background-color: var(--surface);
+    padding: 1rem;
+    border-radius: 1rem;
+
+    p {
+        margin-top: 1rem;
+    }
+}
+
+
+
+#services-cta-container {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+#compare-packages-cta {
+    padding: .5rem 2rem;
+    border-radius: 3rem;
+    border: 2px solid;
+    font-size: 1.2rem;
+    color: var(--accent-primary);
+    background-color: transparent;
+    border-color: var(--accent-primary);
+}
+
+#compare-packages-cta:hover {
+    color: var(--background);
+    background-color: var(--accent-primary);
+    cursor: pointer;
+    transition: background-color .2s linear;
+    transition: color .2s linear
+}
+
+#contact {
+    height: fit-content;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    background-color: var(--background);
+    background-image: linear-gradient(to top, transparent, var(--background)), url(./assets/art/grit_blue_transparent.png);
+    background-size: cover;
+}
+
+#contact-header {
+    text-align: center;
+}
+
+#contact-options-container {
+    width: 100%;
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+}
+
+#contact-form {
+    width: 100%;
+    display: block;
+    background-color: var(--surface);
+    border-radius: 1rem;
+    padding: 2rem;
+}
+
+.contact-item {
+    width: 100%;
+    margin-bottom: 1rem;
+    display: block;
+
+    input {
+        width: 100%;
+        margin-top: .5rem;
+    }
+
+    textarea {
+        width: 100%;
+        height: 10rem;
+        margin-top: .5rem;
+
+    }
+}
+
+#send-contact-message-container {
+    text-align: center;
+
+}
+
+#send-contact-message {
+    padding: .5rem 2rem;
+    border-radius: 3rem;
+    border: 2px solid;
+    font-size: 1.2rem;
+
+    color: var(--accent-primary);
+    background-color: transparent;
+    border-color: var(--accent-primary);
+}
+
+#send-contact-message:hover {
+    cursor: pointer;
+    transition: background-color .2s linear;
+    transition: color .2s linear;
+    background-color: var(--accent-primary);
+    color: var(--background);
+}
+
+.social {
+    display: block;
+
+    img {
+        height: 1.2rem;
+        width: 1.2rem;
+        margin-right: .5rem;
+    }
+}
+
+@media (max-width: 1000px) {
+    #hero-text {
+        h1 {
+            font-size: 2rem;
+
+        }
+    }
+
+    #header-cta-container {
+        width: 100%;
+    }
+
+    #mission-container {
+        flex-direction: column;
+    }
+
+
+    #mission-image {
+        width: 100%;
+        object-fit: cover;
+        object-position: 50% 70%;
+
+    }
+
+    #mission-text {
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+
+    #hero {
+        height: calc(var(--default-section-height) - 5rem);
+        display: grid;
+        grid-template-areas: "hero-logo" "hero-text";
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(2, fit-content);
+        align-content: center;
+        gap: 2rem;
+        padding: 1rem;
+    }
+
+    #header-cta-container {
+        width: 100%;
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    #services-cards {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding-bottom: 1rem;
+        border-bottom: var(--surface-border);
+    }
+
+    #contact-options-container {
+        width: 100%;
+        margin-top: 2rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-auto-flow: row;
+        gap: 2rem;
+    }
+}

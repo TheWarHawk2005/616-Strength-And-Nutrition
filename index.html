@@ -6,237 +6,164 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>616 Strength & Nutrition</title>
-    <meta name="description" content="We are a West Michigan-based, private garage gym, offering 1:1, small group, and online barbell coaching, as well as certified nutrition coaching services to people of all ages and abilities.">
+    <meta name="description"
+        content="West Michigan-based private garage gym, offering in-person and online barbell coaching, as well as certified nutrition coaching services to people of all ages and abilities.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="./Assets/favicon.ico" type="image/x-icon">
-
-    <meta name="google-site-verification" content="ze9eu-P8xvZh2qy_x6NmeykepsQFeDvTklvoafn1tLA" />
+    <link rel="stylesheet" href="index.css">
 </head>
-<script src="pricing.js"></script>
 
 <body>
-    <div id="main">
-        <!-- SECTION 1 -->
-        <div id="section-1" class="section">
-            <img id="section-1-logo" src="./Assets/logo_text_white.png">
+    <!-- TODO: Make links absolute -->
+    <nav>
+        <div id="mobile-nav-container">
+            <span id="mobile-wordmark">616 Strength & Nutrition</span>
+            <button id="nav-hamburger" onclick="toggleNavLinks()"></button>
         </div>
-
-        <!-- SECTION 2 -->
-        <div id="section-2" class="section">
-            <div id="section-2-about">
-                <h1>About Us</h1>
-                <br>
-                <p>We are a West Michigan-based, private garage gym, offering 1:1, small group, and online barbell
-                    coaching, as well as certified nutrition coaching services. Since 2021, our client-centered approach
-                    has
-                    served people of *all* ages and abilities. Whether you're looking to enhance performance in a
-                    sport/hobby, improve functional strength, or avoid the effects of aging (imbalance, frailty,
-                    weakness,
-                    injury), we are here to serve you. Come, get strong with us!</p>
-                <br>
+        <div id="nav-links-container">
+            <div class="nav-link" onclick="window.location = 'https://616strength.com/2026_1.0'">
+                <span>Home</span>
             </div>
-            
-            <div id="section-2-nesting">
-                <div class="section-left">
-                    <img id="section-2-img" src="./Assets/robert_and_kristin_edited_small2.png">
-                </div>
-                <div class="section-right">
-                    
-                    <h2>Meet Your Coaches</h2>
-                    <br>
-                    <h3>Robert Harrison</h3>
-                    <h4>Barbell Coach</h4>
-                    <br>
-                    <p>Working in long term care for more than 20 years, Robert has witnessed the predictable patterns of
-                        aging and frailty, as well as the injuries that are associated with aging. In 2015, he began his barbell journey 
-                        as a way to improve his functional strength in his secondary profession as a paid-on-call firefighter.
-                        He soon saw the connection between weight training and improved aging. Dr. Jonathan Sullivan's great work, "The Barbell Prescription" inspired him to become a Barbell Logic-trained coach.</p>
-                    <br>
-                    <h3>Kristin Harrison</h3>
-                    <h4>Assistant Barbell Coach, PN1-CNC, GGS-CMCS</h4>
-                    <br>
-                    <p>Kristin Harrison is a strength and nutrition coach offering evidence-based guidance in nutrition and movement. 
-                        Her model of coaching is uniquely compassionate, as she herself was a medical nutrition
-                        patient for nearly two years. Kristin is familiar with the diverse metabolic challenges men & women
-                        face in
-                        all seasons of life, regardless of fitness level. She is trained to support clients with 1:1 or
-                        small
-                        group consultation, create individualized meal plans, provide weekly accountability, and assist with
-                        other aspects of deep health (change psychology, sleep/recovery, hormone health).</p>
-                        
-                        <img id="csmc-img" src="Assets/csmc.png">
-                        <img id="csmc-img" src="Assets/pn_logo.png">
-                </div>
+            <div class="nav-link" onclick="window.location = 'https://616strength.com/2026_1.0/pricing'">
+                <span>Packages & Pricing</span>
+            </div>
+            <div class="nav-link" onclick="window.location = 'https://616strength.com/2026_1.0/pricing/#camps-and-consults'">
+                <span>Camps & Consults</span>
+            </div>
+            <div class="nav-link" onclick="window.location = 'https://616strength.com/2026_1.0/about'">
+                <span>About Us</span>
+            </div>
+            <div class="nav-link" onclick="window.location = 'https://616strength.com/2026_1.0/pt'">
+                <span>Physical Therapy</span>
+            </div>
+            <div class="nav-link" onclick="window.location = 'https://616strength.com/2026_1.0/#contact';scrollToHeader(0)">
+                <span>Contact</span>
             </div>
         </div>
-
-        <!-- SECTION 3 -->
-        <div id="section-3" class="section">
-            <div id="pricing-info">
-                <h1>Coaching Packages</h1>
+    </nav>
+    <main>
+        <section id="hero">
+            <div id="hero-logo">
+                <img id="hero-logo-img" src="https://616strength.com/2026_1.0/assets/ui/logo_white_no_background.png">
             </div>
-            <div id="packages">
-                <div id="strength-online" class="package">
-                    <h2>Strength</h2>
-                    <div class="package-type-tag"><span>ONLINE</span></div>
-                    <hr>
-                    <div class="package-details">
-                        <ul>
-                            <li>Online Strength Coaching</li>
-                            <li>Individualized programming</li>
-                            <li>Delivered via TKC app</li>
-                        </ul>
-                    </div>
-                    <div class="package-price-wrapper">
-                        <span class="package-price"></span>
-                        <span class="package-price-time">/month</span>
-                    </div>
-                </div>
-                <div class="package">
-                    <h2>Strength</h2>
-                    <div class="package-type-tag"><span>IN PERSON</span></div>
-                    <hr>
-                    <div class="package-details">
-                        <ul>
-                            <li>(2) one-hour strength training sessions per week</li>
-                            <li>Individualized programming</li>
-                            <li>Small cohort setting</li>
-                            <li>Full access to TKC app</li>
-                        </ul>
-                    </div>
-                    <div class="package-price-wrapper">
-                        <span class="package-price"></span>
-                        <span class="package-price-time">/month</span>
-                    </div>
-                </div>
-                <!-- * Packages no longer offered as of 1/1/25 -->
-                <!-- <div class="package">
-                    <h2>Nutrition</h2>
-                    <div class="package-type-tag"><span>ONLINE</span></div>
-                    <hr>
-                    <div class="package-details">
-                        <ul>
-                            <li>Online nutrition coaching by our PN1 certified coach</li>
-                            <li>Delivered via TKC app</li>
-                        </ul>
-                    </div>
-                    <div class="package-price-wrapper">
-                        <span class="package-price"></span>
-                        <span class="package-price-time">/month</span>
-                    </div>
-                </div>
-                <div class="package">
-                    <h2>Strength & Nutrition</h2>
-                    <div class="package-type-tag"><span>ONLINE</span></div>
-                    <hr>
-                    <div class="package-details">
-                        <ul>
-                            <li>Online Strength Coaching</li>
-                            <li>Individualized programming</li>
-                            <li>Online nutrition coaching by our PN1 certified coach</li>
-                            <li>Delivered via TKC app</li>
-                        </ul>
-                    </div>
-                    <div class="package-price-wrapper">
-                        <span class="package-price"></span>
-                        <span class="package-price-time">/month</span>
-                    </div>
-                </div> -->
-                <div class="package">
-                    <h2>Strength & Nutrition</h2>
-                    <div class="package-type-tag"><span>IN PERSON + ONLINE</span></div>
-                    <hr>
-                    <div class="package-details">
-                        <ul>
-                            <li>(2) one-hour strength training sessions per week IN PERSON</li>
-                            <li>Individualized programming</li>
-                            <li>Small cohort setting</li>
-                            <li>Nutrition coaching by our PN1 certified coach ONLINE</li>
-                            <li>Full access to TKC app</li>
-                        </ul>
-                    </div>
-                    <div class="package-price-wrapper">
-                        <span class="package-price"></span>
-                        <span class="package-price-time">/month</span>
-                    </div>
-                </div>
-                <div class="package last">
-                    <h2>CAMPS & CONSULTS</h2>
-                    <hr>
-                    <div class="package-details">
-                        <p>Various options including:</p>
-                        <ul>
-                            <li>90 minute introduction to barbell training</li>
-                            <br>
-                            <span><b>OR</b></span>
-                            <li>90 minute consulting session</li>
-                        </ul>
-                    </div>
-                    <div class="package-price-wrapper">
-                        <span class="package-price"></span>
-                        <span class="package-price-time"> one time charge</span>
-                    </div>
-                </div>
+            <div id="hero-text">
+                <h1>Personalized Coaching.</h1>
+                <h1>Proven Results.</h1>
             </div>
+        </section>
+        <div id="header-cta-container">
+            <button id="header-cta-nutrition" class="header-cta" onclick="window.location = ('https://616strength.com/2026_1.0/pricing')">Explore
+                Nutrition Packages</button>
+
+            <button id="header-cta-strength" class="header-cta" onclick="window.location = ('https://616strength.com/2026_1.0/pricing')">Explore
+                Strength Packages</button>
         </div>
+        <section id="mission">
+            <div id="scroll-prompt">
+                <span>...or keep scrolling to learn more</span>
+            </div>
 
-        <!-- SECTION 4 -->
-        <div id="section-4">
-            <input id="signup-cta" class="cta" type="button" value="Sign Up" onclick="redirectToSignup()">
-        </div>
+            <div id="mission-container">
+                <h1>God, Family, Community:</h1>
+                <h2>We have a responsibility to serve</b>, and to do that, we need to be healthy and strong.</h2>
+                <p>That's why we started 616 Strength & Nutrition. Since 2021, we've helped our clients improve their
+                    functional strength, regain
+                    stability, slow
+                    effects of aging, and manage a nutritional regime through a comprehensive combination of <b>our
+                        two primary services:</b></p>
+            </div>
 
-        <!-- SECTION 5 -->
-        <div id="section-5" class="section">
-            <h1>Contact Us</h1>
+        </section>
+        <section id="services">
 
-            <div id="section-5-wrapper">
-                <div class="section-left">
-                    <form id="contact-form">
-                        <!-- To simplify the tutorial, the value is static. -->
-                        <input type="hidden" name="contact-number" value="697483">
+            <div id="services-body">
 
-                        <label for="user-name">Name</label>
-                        <input type="text" id="user-name" name="user-name">
-                        <label for="user-email">Email</label>
-                        <input type="email" id="user-email" name="user-email">
-                        <label for="contact-message">Message</label>
-                        <textarea name="contact-message" id="contact-message"></textarea>
+                <div id="services-cards">
 
-
-                        <input class="cta" type="submit" value="Send">
-                    </form>
+                    <div class="service-card">
+                        <h3>Strength</h3>
+                        <p><i>Not just about looking good, our strength program utilizes barbells to build <b>real,
+                                    practical
+                                    strength</b>, improve balance, and more.</i></p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Nutrition</h3>
+                        <p><i>Certified and with unique compassion, Kristin works with our clients to design a nutrition
+                                program that improves metabolic markers, manage a dietary schedule, and augment
+                                training.</i>
+                        </p>
+                    </div>
                 </div>
 
-                <div class="section-right">
-                    <p>Questions? Please reach out to us!</p>
 
+                <div id="services-cta-container">
+                    <button id="compare-packages-cta" onclick="window.location = ('https://616strength.com/2026_1.0/pricing')">Compare Packages</button>
+                </div>
+
+            </div>
+
+        </section>
+        <section id="contact">
+            <div id="contact-header">
+                <h1>Contact Us</h1>
+
+            </div>
+            <div id="contact-options-container">
+                <form id="contact-form">
+                    <label class="contact-item">
+                        Name
+                        <input type="text" id="user_name" name="user_name">
+                    </label>
+                    <label class="contact-item">
+                        Email
+                        <input type="email" id="user_email" name="user_email">
+                    </label>
+                    <label class="contact-item">
+                        Message
+                        <textarea name="message" id="message"></textarea>
+                    </label>
+                    <div id="send-contact-message-container">
+                        <input id="send-contact-message" type="submit" value="Send Message">
+                    </div>
+                </form>
+
+                <div id="socials">
                     <div class="social">
-                        <img src="./Assets/Facebook_Logo_Secondary.png">
+                        <img src="./assets/ui/Facebook_Logo_Secondary.png">
                         <a href="https://www.facebook.com/616StrengthLab">Robert Harrison</a>
                     </div>
                     <div class="social">
-                        <img src="./Assets/Instagram_Glyph_White.png">
+                        <img src="./assets/ui/Instagram_Glyph_White.png">
                         <a href="https://www.instagram.com/616_strength_nutrition/">616_strength_nutrition</a>
                     </div>
                     <div class="social">
-                        <img src="./Assets/Gmail_Logo_White_64px.png">
+                        <img src="./assets/ui/Gmail_Logo_White_64px.png">
                         <span>616strength@gmail.com</span>
                     </div>
                 </div>
-
             </div>
-        </div>
 
-    </div>
-
-    <div id="footer">
-        <img src="./Assets/logo.png">
-        <span id="copyright">© 2024 616 Strength Lab LLC. All Rights Reserved. Logo and all related branding (logo, word mark, stripes icon) are property of 616 Strength Lab LLC and shall not be used without explicit permission.</span>
-    </div>
-    </div>
-
+        </section>
+    </main>
+    <footer>
+        <span>616 Strength Lab LLC</span>
+        <a href="https://616strength.com/privacy-policy">Privacy Policy</a>
+    </footer>
     <script src="index.js" async defer></script>
+    <script src="https://616strength.com/2026_1.0/navbar.js" async defer></script>
 </body>
 
 </html>
+
+<!-- 
+
+We are a West Michigan-based, private garage gym, offering 1:1, small group, and online barbell
+coaching, as well as certified nutrition coaching services. Since 2021, our client-centered approach has
+served people of *all* ages and abilities. Whether you're looking to enhance performance in a
+sport/hobby, improve functional strength, or avoid the effects of aging (imbalance, frailty, weakness,
+injury), we are here to serve you. Come, get strong with us!
+
+
+Optimize your fitness journey by combining strength training with a nutrition plan made for you and your body
+
+-->
