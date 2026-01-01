@@ -1,0 +1,64 @@
+body {
+    width: 100%;
+    background-color: var(--background);
+    background-image: none;
+    font-family: "Chivo";
+    font-size: 1.2rem;
+    font-weight: var(--font-weight);
+
+    color: var(--text-default)
+}
+
+main {
+    width: 100%;
+    min-height: var(--useable-height);
+    background-image: url('https://616strength.com/2026_1.0/assets/art/grit_blue_transparent.png');
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+h3 {
+    margin-bottom: 1rem;
+}
+
+h1 {
+    margin-bottom: 2rem;
+}
+
+li:not(:last-child) {
+    margin-bottom: 2rem;
+}
+
+
+@media (max-width: 1000px) {
+    section {
+        width: 100%;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-top: 2rem;
+    }
+
+    .card-container {
+        grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+        grid-auto-flow: row;
+    }
+}
+
+@media (max-width: 500px) {
+    section {
+        width: 100%;
+
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-top: 2rem;
+    }
+
+    .card-container {
+        grid-template-columns: 1fr;
+        grid-auto-flow: row;
+        gap: 2rem;
+    }
+
+}
