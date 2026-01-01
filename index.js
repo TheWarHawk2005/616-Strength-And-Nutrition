@@ -25,7 +25,7 @@ window.onload = function () {
 
         const userName = form.querySelector('#user-name').value;
         const userEmail = form.querySelector('#user-email').value;
-        const contactMessage = form.querySelector('textarea[name="contact-message"]').value;
+        const contactMessage = form.querySelector('#message').value;
 
         console.log({ userName, userEmail, contactMessage });
 
