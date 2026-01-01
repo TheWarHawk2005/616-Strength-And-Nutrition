@@ -1,6 +1,6 @@
 const navLinks = document.getElementById('nav-links-container')
 window.addEventListener('resize', checkNavbar);
-document.getElementById('mobile-wordmark').addEventListener('click', window.location = 'https://616strength.com')
+document.getElementById('mobile-wordmark').addEventListener('click', function() {window.location = 'https://616strength.com'})
 
 console.log('Navbar scripts connected.')
 
