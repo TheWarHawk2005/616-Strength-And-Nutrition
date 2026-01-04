@@ -3,7 +3,7 @@
         {
             "id": "strength-online",
             "name": "Online Strength",
-            "price": 150,
+            "price": 175,
             "interval": "month",
             "format": "online",
             "feature_indexes": [
@@ -15,7 +15,7 @@
         {
             "id": "strength-in-person",
             "name": "In-Person Strength",
-            "price": 230,
+            "price": 250,
             "interval": "month",
             "format": "in-person",
             "feature_indexes": [
@@ -28,7 +28,7 @@
         {
             "id": "strength-nutrition",
             "name": "Strength & Nutrition",
-            "price": 300,
+            "price": 350,
             "interval": "month",
             "format": "in-person",
             "feature_indexes": [
@@ -42,7 +42,7 @@
         {
             "id": "nutrition-online",
             "name": "Nutrition",
-            "price": 100,
+            "price": 150,
             "interval": "month",
             "format": "online",
             "feature_indexes": [
@@ -55,7 +55,7 @@
         {
             "id": "camps",
             "name": "Camp or Consult",
-            "price": 85,
+            "price": 100,
             "format": "online",
             "feature_indexes": [
                 6
