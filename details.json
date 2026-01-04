@@ -14,7 +14,7 @@
         },
         {
             "id": "strength-in-person",
-            "name": "Strength",
+            "name": "In-Person Strength",
             "price": 230,
             "interval": "month",
             "format": "in-person",
