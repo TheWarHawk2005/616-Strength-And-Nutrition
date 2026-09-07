@@ -4,7 +4,7 @@
             "id": "strength-online",
             "name": "Online Strength",
             "price": 175,
-            "interval": "month",
+            "interval": "2 weeks",
             "format": "online",
             "feature_indexes": [
                 0,
@@ -43,7 +43,7 @@
             "id": "nutrition-online",
             "name": "Nutrition",
             "price": 150,
-            "interval": "month",
+            "interval": "2 weeks",
             "format": "online",
             "feature_indexes": [
                 4,
