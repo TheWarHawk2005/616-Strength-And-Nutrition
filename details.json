@@ -3,7 +3,7 @@
         {
             "id": "strength-online",
             "name": "Online Strength",
-            "price": 175,
+            "price": 75,
             "interval": "2 weeks",
             "format": "online",
             "feature_indexes": [
