@@ -42,7 +42,7 @@
         {
             "id": "nutrition-online",
             "name": "Nutrition",
-            "price": 150,
+            "price": 75,
             "interval": "2 weeks",
             "format": "online",
             "feature_indexes": [
