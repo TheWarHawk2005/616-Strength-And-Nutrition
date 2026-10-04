@@ -3,6 +3,13 @@ main {
     padding-bottom: 0rem;
 }
 
+#announcement-banner {
+    height: var(--nav-height);
+    width: 100%;
+    background-color: blue;
+    display: none;
+}
+
 /* ------------------------------ HERO SECTION ------------------------------ */
 #hero {
     height: calc(var(--default-section-height) - 5rem);
