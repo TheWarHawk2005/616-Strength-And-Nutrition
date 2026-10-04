@@ -24,7 +24,7 @@
     --selection: hsla(0, 67%, 35%, 0.801);
 
     --nav-height: 4rem;
-    --useable-height: calc(100vh - var(--nav-height));
+    --useable-height: calc(100lvh - var(--nav-height));
     --default-section-height: calc(var(--useable-height) - 4rem)
 }
 
