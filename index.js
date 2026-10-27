@@ -15,6 +15,7 @@ async function scrollToHeader(delay = 1000) {
 		delay)
 }
 
+let isSendingMail = false;
 // copied old code from website
 // TODO: Merge homepage and verify contact box works. MUST BE RAN ON 616strength.com TO PASS CORS
 window.onload = function () {
@@ -27,34 +28,40 @@ window.onload = function () {
 	form.addEventListener('submit', async (event) => {
 		event.preventDefault();
 
-		const userName = form.querySelector('#user-name').value;
-		const userEmail = form.querySelector('#user-email').value;
-		const contactMessage = form.querySelector('#message').value;
+	if (isSendingMail) return;
+	isSendingMail = true;
 
-		console.log({ userName, userEmail, contactMessage });
+	const workerUrl = "https://porter.louis-h-harrison.workers.dev";
+	const orgID = '8ryubtt6l37qz46'
+	const emailData = {
+		name: document.querySelector('#user-name').value,
+		email: document.querySelector('#user-email').value,
+		message: document.querySelector('#message').value,
+		organization_id: orgID,
+	};
 
-		(async () => {
-			try {
-				const response = await fetch("https://tests--msmoneypenny.netlify.app/.netlify/functions/moneypenny", {
-					method: "POST",
-					headers: {
-						"Content-Type": "application/json"
-					},
-					body: JSON.stringify({
-						task: "check_form",
-						body: { name: userName, email: userEmail, message: contactMessage }
-					})
-				});
 
-				const data = await response.json();
-				console.log("Function response:", data);
-			} catch (err) {
-				console.error("Fetch failed:", err);
-			}
-		})();
-		alert('Message sent! 🏋️‍♂️')
-		window.location = 'https://616strength.com'
-	});
+	try {
+		const response = await fetch(`${workerUrl}/mail`, {
+			method: "POST",
+			headers: {
+				"Content-Type": "application/json",
+			},
+			body: JSON.stringify(emailData),
+		});
+
+		const result = JSON.parse(await response.text())
+		if (!response.ok) {
+			throw new Error(result.error || "Email request failed");
+		}
+		console.log("Email sent successfully:", result)
+		alert("Thank you! We will get back to you as soon.")
+	} catch (error) {
+		console.error("Email error:", error);
+		alert("Sorry, there was an issue sending your message. Please try again.")
+	} finally {
+		isSendingMail = false;
+	}
 }
 
 // Google Map embed
