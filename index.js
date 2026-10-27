@@ -62,6 +62,7 @@ window.onload = function () {
 	} finally {
 		isSendingMail = false;
 	}
+	})
 }
 
 // Google Map embed
