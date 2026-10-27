@@ -55,7 +55,8 @@ window.onload = function () {
 			throw new Error(result.error || "Email request failed");
 		}
 		console.log("Email sent successfully:", result)
-		alert("Thank you! We will get back to you as soon.")
+		alert("Thank you! We will get back to you soon.")
+				window.location.reload()
 	} catch (error) {
 		console.error("Email error:", error);
 		alert("Sorry, there was an issue sending your message. Please try again.")
